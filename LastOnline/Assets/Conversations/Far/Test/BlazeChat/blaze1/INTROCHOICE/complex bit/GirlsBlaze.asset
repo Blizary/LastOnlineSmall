@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: GirlsBlaze
+  m_EditorClassIdentifier: 
+  characterName: blaz3_
+  chatText:
+  - sooooo u like bat for the other team eh?
+  - nice ;p ...
+  - '''you''.'
+  timer: 3
+  options:
+  - {fileID: 11400000, guid: 2cfa8dcc9832d0e47bce9a6f5e689e23, type: 2}
+  - {fileID: 11400000, guid: 0c49b315a4fb0fb47848e7c0277b65fe, type: 2}
+  - {fileID: 11400000, guid: 9f78c6ba664b8ef49acc90bb04234f6e, type: 2}

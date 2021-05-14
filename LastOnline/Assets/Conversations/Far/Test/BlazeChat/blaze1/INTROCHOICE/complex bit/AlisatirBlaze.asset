@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: AlisatirBlaze
+  m_EditorClassIdentifier: 
+  characterName: blaz3_
+  chatText:
+  - dude wtf lol.?
+  - its 2010. hes not real, but uhhh.
+  - yeah. *IIII* could even be lying about who I am!
+  - i could be a *muuuurdererrrrrrr* :o
+  timer: 3
+  options:
+  - {fileID: 11400000, guid: c2dfc208eb864364d865fcc2d8a6273a, type: 2}
+  - {fileID: 11400000, guid: 728fb8044dbe85b4fa4b725b0cb1917c, type: 2}
+  - {fileID: 11400000, guid: 62ee91e0459dbc64a9091d56a305d2d4, type: 2}

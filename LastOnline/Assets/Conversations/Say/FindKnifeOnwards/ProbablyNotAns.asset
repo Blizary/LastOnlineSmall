@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73afa3e0513ea954ca26c76194ae049a, type: 3}
+  m_Name: ProbablyNotAns
+  m_EditorClassIdentifier: 
+  feelingName: probably not
+  playerAwnser:
+  - it seems like a bad idea
+  - to just leave a murder weapon
+  - lying arounddd
+  npcAnwser: {fileID: 11400000, guid: ecea505e8179c9b4b89ca79e44aa2f0d, type: 2}
+  triggersEvents: 0
+  nextEvent: 0

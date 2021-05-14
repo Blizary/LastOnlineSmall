@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: AirCovern
+  m_EditorClassIdentifier: 
+  characterName: Tulisaa
+  chatText:
+  - soooo
+  - our killer is a member of air coven?
+  timer: 3
+  options:
+  - {fileID: 11400000, guid: 524098083413ece4a907c02a0b85b76a, type: 2}
+  - {fileID: 11400000, guid: b97e956cda4d36d45832b403df278f8d, type: 2}
+  - {fileID: 11400000, guid: 9e36ef1cc7f167f4a80ab39173a48a7e, type: 2}
+  nextNpcText: {fileID: 0}
+  speaker: Tulisaa

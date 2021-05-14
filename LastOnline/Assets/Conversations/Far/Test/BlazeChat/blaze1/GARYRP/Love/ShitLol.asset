@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: ShitLol
+  m_EditorClassIdentifier: 
+  characterName: blaz3_meist3r_
+  chatText:
+  - "oh yeha\u2026"
+  - shit lol
+  - "Sooo, what if u were garry\u2019s dreamboat? "
+  - u totally fit the bill.
+  - i would say ur deffo his type ;)
+  - ;) ;) ;)
+  timer: 1
+  options:
+  - {fileID: 11400000, guid: 68bfe8bd4c4ca374caa8eae9144dd0ce, type: 2}
+  - {fileID: 11400000, guid: f2d84d3b21c76334fb0305f6592bda42, type: 2}
+  - {fileID: 11400000, guid: 57a35a3299b8cee4897c163c15160a74, type: 2}

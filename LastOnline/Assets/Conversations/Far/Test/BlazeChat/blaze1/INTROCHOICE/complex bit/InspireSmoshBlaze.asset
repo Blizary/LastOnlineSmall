@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: InspireSmoshBlaze
+  m_EditorClassIdentifier: 
+  characterName: blaz3_
+  chatText:
+  - lolllllll love them smosh vids.
+  - anyway. with ur CoD youtube channel and all.
+  - i'd say ur deffo garry's type ;) ;) ;) ;) ;)
+  timer: 3
+  options:
+  - {fileID: 11400000, guid: 054053ca4b479cc40a6622667874aa7e, type: 2}
+  - {fileID: 11400000, guid: a6984a8ec83ac6d4ea13edd49f98a50c, type: 2}
+  - {fileID: 11400000, guid: d8c54503c80b65440be1ced401216fbe, type: 2}

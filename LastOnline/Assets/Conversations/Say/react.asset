@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: react
+  m_EditorClassIdentifier: 
+  characterName: Tulisaa
+  chatText:
+  - I just saw a dead body
+  - how am I supposed to react?
+  - Dick.
+  - ur supposed to stay in character
+  timer: 3
+  options: []
+  nextNpcText: {fileID: 11400000, guid: 3bfea19893b9a0c459e74273006495a9, type: 2}
+  speaker: Tulisaa

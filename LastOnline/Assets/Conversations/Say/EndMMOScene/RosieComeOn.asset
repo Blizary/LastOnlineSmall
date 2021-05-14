@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: RosieComeOn
+  m_EditorClassIdentifier: 
+  characterName: 'rosie_ple4se '
+  chatText:
+  - come on! theyre good unis!
+  - i have thought abt brighton. and bristol.
+  - u thought abt those too?
+  timer: 3
+  options:
+  - {fileID: 11400000, guid: fd03eb5fcda1554419e39c0a1a590c6b, type: 2}
+  - {fileID: 11400000, guid: 16ab02cb18bd6cf42be4dbab7a61aeec, type: 2}
+  - {fileID: 11400000, guid: 2be79a304aee4b141bbee61566c349a4, type: 2}
+  nextNpcText: {fileID: 0}
+  speaker: rosie_ple4se

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: QtPi
+  m_EditorClassIdentifier: 
+  characterName: blaz3_meist3r_
+  chatText:
+  - no need to get that rude qt pi :P
+  - im only messing with ya!
+  - sooooo girl
+  - what is your type?
+  timer: 1
+  options:
+  - {fileID: 11400000, guid: 369186c90ecc98642b2cf0837108650c, type: 2}
+  - {fileID: 11400000, guid: 5a099fc94a9c76345a38cfbaf5bbb776, type: 2}
+  - {fileID: 11400000, guid: 16223f2700543de45872667a4bc73890, type: 2}

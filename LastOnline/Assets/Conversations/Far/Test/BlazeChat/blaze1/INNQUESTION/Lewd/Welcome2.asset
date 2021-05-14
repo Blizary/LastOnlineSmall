@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: Welcome2
+  m_EditorClassIdentifier: 
+  characterName: blaz3_meist3r_
+  chatText:
+  - ha!
+  - welcome to the internet {PLAYERNAME}
+  - where all your hopes and filthy desires may come true.
+  - "don\u2019t worry though"
+  - its called role playing
+  - and believe it or not
+  - there are people who arent horny in here taking it seriously.
+  - i mean really,
+  - i promise the game isnt all just weirdos wanting ERP now
+  timer: 1
+  options:
+  - {fileID: 11400000, guid: 34825c84874f1f040850533881fdf9f5, type: 2}
+  - {fileID: 11400000, guid: cf42d081eb9cdae4bbc82ee5983d4364, type: 2}
+  - {fileID: 11400000, guid: 08b2cda544cb06a4c8dc1cb586d72d05, type: 2}

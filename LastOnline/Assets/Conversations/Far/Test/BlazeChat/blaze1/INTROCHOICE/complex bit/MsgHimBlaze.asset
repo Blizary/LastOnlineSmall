@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: MsgHimBlaze
+  m_EditorClassIdentifier: 
+  characterName: blaz3_
+  chatText:
+  - damn giiirl!
+  - ur confident!
+  - imagine where we would be if u messaged first ;)
+  timer: 3
+  options:
+  - {fileID: 11400000, guid: b6e5b46d446ce7f4d911e5d7d00aada7, type: 2}
+  - {fileID: 11400000, guid: e004c6d21f8cff54fb87f1b32c14826d, type: 2}
+  - {fileID: 11400000, guid: f2c9beaeb66bbba44bf156333498522a, type: 2}
