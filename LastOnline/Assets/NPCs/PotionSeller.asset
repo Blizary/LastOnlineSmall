@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42834912cc6a97e429a741488ba9e271, type: 3}
+  m_Name: PotionSeller
+  m_EditorClassIdentifier: 
+  npcImage: {fileID: 0}
+  npcName: Asklepios
+  tooltipInfo: 
+  playerIcon: {fileID: 0}
+  affiliationIcon: {fileID: 0}
+  rpName: Asklepios
+  eyeColour: Deep Purple
+  height: 5ft5
+  affiliation: 0
+  rpClass: Alchemist
+  description: "Askelpios\u2019 rough appearance makes him not the most trustworthy
+    of potion sellers\u2026 judging by the mad scientist appearance, it seems he
+    makes most of his wares himself. A home brew potion definitely seems like a risky
+    purchase, but with the greatly reduced price and puppy eyes he gives all potential
+    clients, it seems lots of individuals have trouble denying him. Despite it all,
+    he has never received a complaint! So his stuff must be legit! Unless\u2026 every
+    customer hasn\u2019t survived long enough to do so.... "

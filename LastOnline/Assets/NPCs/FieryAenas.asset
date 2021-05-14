@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42834912cc6a97e429a741488ba9e271, type: 3}
+  m_Name: FieryAenas
+  m_EditorClassIdentifier: 
+  npcImage: {fileID: 0}
+  npcName: FieryAeneas
+  tooltipInfo: 
+  playerIcon: {fileID: 0}
+  affiliationIcon: {fileID: 0}
+  rpName: FieryAeneas
+  eyeColour: Scoria Grey
+  height: 5ft11
+  affiliation: 0
+  rpClass: 'Crusader '
+  description: 'The mighty Constellations have blessed us with these powers we are
+    forever in their debt. As a proud worshipper of the Leo Constellation I use my
+    enhanced strength to crush those who oppose me, as the Constellations intended.
+    Join me in fulfilling your true destiny, maxing out your skill trees and becoming
+    the best Celestial you can be! '

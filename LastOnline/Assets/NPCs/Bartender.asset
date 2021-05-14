@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42834912cc6a97e429a741488ba9e271, type: 3}
+  m_Name: Bartender
+  m_EditorClassIdentifier: 
+  npcImage: {fileID: 0}
+  npcName: Agatone
+  tooltipInfo: 
+  playerIcon: {fileID: 0}
+  affiliationIcon: {fileID: 0}
+  rpName: Agatone
+  eyeColour: Silver
+  height: 5ft8
+  affiliation: 0
+  rpClass: Healer
+  description: "Tired yet crystalline eyes stare out into the taverna. Methodically
+    wiping clean the glass in his hands, his eyes graze over the space as he seems
+    to be mentally taking note of all the various patrons. Agatone is the skilled
+    bartender of Sadalsuud, and his years of experience have formed him into the
+    best drink maker in all of Z\u014Didiak\xF2s. This, aided by his worship of Aquarius,
+    endows him with enhanced mixologist skills, meaning every drink he hand-crafts
+    is perfection. A man of the people, Agatone does not charge a higher rate for
+    his beverage, but instead strictly ensures that none of his patrons have more
+    than they can handle"
