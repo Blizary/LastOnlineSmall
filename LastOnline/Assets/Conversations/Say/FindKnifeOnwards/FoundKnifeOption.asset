@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 73afa3e0513ea954ca26c76194ae049a, type: 3}
-  m_Name: AlrightAns
+  m_Name: FoundKnifeOption
   m_EditorClassIdentifier: 
-  feelingName: yh I'm alright 2
+  feelingName: Found
   playerAwnser:
-  - yh not bad
-  - been a while hey?
-  npcAnwser: {fileID: 11400000, guid: 6f74424dfb0ba3e4b8f389b6a2fd87b8, type: 2}
-  triggersEvents: 1
+  - Found it!
+  - Looks like whoever did it
+  - tried to get rid of the evidence!
+  - wellll now what?
+  npcAnwser: {fileID: 11400000, guid: d4f3211068baefd46a6d2e19ee2d1e53, type: 2}
+  triggersEvents: 0
   nextEvent: 0

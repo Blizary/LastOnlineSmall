@@ -17,7 +17,7 @@ MonoBehaviour:
   - 'jus a reminder:'
   - the murder mystery rp in Sadalsuud
   - is gonna start in about a minute.
-  timer: 3
+  timer: 0
   options: []
   nextNpcText: {fileID: 11400000, guid: aab6d87dd2031c3448bf0b97a9a9c9bc, type: 2}
-  speaker: {fileID: 0}
+  speaker: 

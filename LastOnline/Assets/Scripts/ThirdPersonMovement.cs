@@ -178,20 +178,24 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if(Physics.Raycast (ray, out hit,100.0f))
+        if (Physics.Raycast(ray, out hit, 100.0f))
         {
             //found a target
-            if(hit.transform.gameObject.GetComponent<NPCController>())
+            if (hit.transform.gameObject.GetComponent<NPCController>())
             {
                 //found a npc
                 manager.UpdateTarget(hit.transform.gameObject.GetComponent<NPCController>().npcInfo);
-                if(hit.transform.gameObject.GetComponent<NPCController>().npcInfo.rpName!=null)//there is an rp profile
+                if (hit.transform.gameObject.GetComponent<NPCController>().npcInfo.rpName != null)//there is an rp profile
                 {
                     manager.OpenRPPanel(hit.transform.gameObject.GetComponent<NPCController>().npcInfo);
                 }
             }
 
-
+            //found an interactable obj
+            if (hit.transform.gameObject.GetComponent<InteractObj>())
+            {
+                hit.transform.gameObject.GetComponent<InteractObj>().OnInteract();
+            }
         }
        
     }
