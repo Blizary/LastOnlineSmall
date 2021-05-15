@@ -12,12 +12,15 @@ public class NPCController : MonoBehaviour
     private float speed = 5;
 
     public List<GameObject> rpMovement;
+
+    private GameObject parent;
    
 
     // Start is called before the first frame update
     void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<FarPersonManager>();
+        parent = transform.parent.gameObject;
     }
 
     // Update is called once per frame
@@ -25,18 +28,30 @@ public class NPCController : MonoBehaviour
     {
         if(movement.Count!=0)
         {
-            float step = speed * Time.deltaTime; // calculate distance to move
-            Vector3 dir = movement[0].transform.position;
-            dir.y = transform.position.y;
-            transform.position = Vector3.MoveTowards(transform.position, dir, step);
-            transform.LookAt(dir);
-
-            // Check if the position of the cube and sphere are approximately equal.
-            if (Vector3.Distance(transform.position, dir) < 0.1f)
+            if(movement.Count == 1)
             {
-                // Swap the position of the cylinder.
+                Vector3 dir = movement[0].transform.position;
+                dir.y = transform.position.y;
+                transform.LookAt(dir);
                 movement.RemoveAt(0);
+
             }
+            else
+            {
+                float step = speed * Time.deltaTime; // calculate distance to move
+                Vector3 dir = movement[0].transform.position;
+                dir.y = transform.position.y;
+                parent.transform.position = Vector3.MoveTowards(parent.transform.position, dir, step);
+                parent.transform.LookAt(dir);
+
+                // Check if the position of the cube and sphere are approximately equal.
+                if (Vector3.Distance(parent.transform.position, dir) < 0.1f)
+                {
+                    // Swap the position of the cylinder.
+                    movement.RemoveAt(0);
+                }
+            }
+          
         }
     }
 

@@ -237,11 +237,11 @@ public class ChatBoxManager : MonoBehaviour
         newTab.currentText = 0;
         //inicialize lists
         newTab.displayedText = new List<string>();
-        newTab.tabNum = tabs.Count-1;
+        newTab.tabNum = tabs.Count;
 
         tabs.Add(newTab);
 
-        StartCoroutine(WaitForNextSentence(tabs[tabs.Count - 1].tabChat[0].timer, tabs[tabs.Count - 1], 0, null));
+        StartCoroutine(WaitForNextSentence(tabs[newTab.tabNum-1].tabChat[0].timer,newTab, 0, null));
 
     }
 
@@ -423,8 +423,16 @@ public class ChatBoxManager : MonoBehaviour
         manager.CloseChat();
 
         //update the choices
+
+        //clear options
+        for (int i = 0; i < optionsPanel.transform.childCount; i++)
+        {
+            optionsPanel.transform.GetChild(i).gameObject.GetComponent<ChoiceController>().ClearValues();
+        }
+
         for (int i = 0; i < tabs[currentChat].lastMessage.options.Count; i++)
         {
+            optionsPanel.transform.GetChild(i).gameObject.SetActive(true);
             optionsPanel.transform.GetChild(i).GetComponent<ChoiceController>().SetValues(tabs[currentChat].lastMessage.options[i]);
         }
         
