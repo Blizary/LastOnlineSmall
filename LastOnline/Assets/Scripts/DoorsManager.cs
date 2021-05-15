@@ -1,17 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public enum IngameEvent
 {
     RpEvent,
-    FriendLogOff
+    RpInterract,
+    FriendLogOff,
 }
 public class DoorsManager : MonoBehaviour
 {
 
     [Header("Settings")]
     [SerializeField] private bool holdToType;
+    public ChatBoxManager chatManager;
+    public ChatConv rpConvo;
+
+    public UnityEvent rpStart;
+    public UnityEvent rpInterract;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +37,12 @@ public class DoorsManager : MonoBehaviour
         {
             case IngameEvent.RpEvent:
                 Debug.Log("Rp event started");
+                rpStart.Invoke();
+                chatManager.AddChat(rpConvo);
+                break;
+            case IngameEvent.RpInterract:
+                Debug.Log("Rp interact started");
+                rpInterract.Invoke();
                 break;
             case IngameEvent.FriendLogOff:
                 Debug.Log("Friend log off event started");

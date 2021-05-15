@@ -21,4 +21,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5dbb32ff885f0354f9fdbc42de28d656, type: 2}
   - {fileID: 11400000, guid: 0edf14f6d39b9324fb8fe2d7ef156314, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: blaz3_
+  speaker: blaze

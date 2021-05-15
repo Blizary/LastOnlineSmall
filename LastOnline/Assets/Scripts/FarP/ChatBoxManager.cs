@@ -68,7 +68,6 @@ public class ChatBoxManager : MonoBehaviour
                 for (int i = 0; i < _newText.chatText.Count; i++)//for each line in this message
                 {
                     textbubble += _newText.chatText[i] + "\n";
-                    Debug.Log(textbubble);
                 }
                 if (GameObject.Find(_newText.speaker))
                 {
@@ -210,6 +209,40 @@ public class ChatBoxManager : MonoBehaviour
 
 
         }
+    }
+
+    public void AddChat(ChatConv _newCov)
+    {
+        Tab newTab = new Tab();
+        //get the name
+        if (_newCov.chatType == ChatType.chatPublic)
+        { 
+        }
+        else if (_newCov.chatType == ChatType.chatSay)
+        {
+            newTab.tabName = "Say";
+        }
+        else
+        {
+            newTab.tabName = _newCov.conversation[0].characterName;
+        }
+
+        //get the conversation
+        newTab.tabChat = _newCov.conversation;
+
+        //set type
+        newTab.type = _newCov.chatType;
+
+        //start at 0 chat
+        newTab.currentText = 0;
+        //inicialize lists
+        newTab.displayedText = new List<string>();
+        newTab.tabNum = tabs.Count-1;
+
+        tabs.Add(newTab);
+
+        StartCoroutine(WaitForNextSentence(tabs[tabs.Count - 1].tabChat[0].timer, tabs[tabs.Count - 1], 0, null));
+
     }
 
 

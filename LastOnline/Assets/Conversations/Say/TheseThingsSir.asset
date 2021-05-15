@@ -20,4 +20,4 @@ MonoBehaviour:
   timer: 3
   options: []
   nextNpcText: {fileID: 11400000, guid: 6b7b4dd2c580ad54bb940231f339945e, type: 2}
-  speaker: _jerry
+  speaker: Jerry

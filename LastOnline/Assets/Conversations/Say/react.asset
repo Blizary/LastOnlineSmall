@@ -21,4 +21,4 @@ MonoBehaviour:
   timer: 3
   options: []
   nextNpcText: {fileID: 11400000, guid: 3bfea19893b9a0c459e74273006495a9, type: 2}
-  speaker: Tulisaa
+  speaker: Tulisa

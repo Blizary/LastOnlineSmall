@@ -20,4 +20,4 @@ MonoBehaviour:
   timer: 3
   options: []
   nextNpcText: {fileID: 11400000, guid: 23edfcc5de52f3a448269b7436a46003, type: 2}
-  speaker: blaz3_
+  speaker: blaze

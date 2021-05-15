@@ -37,7 +37,7 @@ public class ChatBubbleController : MonoBehaviour
 
     public void SetChat(string _newText)
     {
-        Debug.Log(_newText);
+
         textBubble.GetComponent<TextMeshProUGUI>().text = _newText;
     }
 }
