@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MsnManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class MsnManager : MonoBehaviour
     public GameObject scrollDownTextButton;
     public GameObject UITrash;
     public GameObject optionsPanel;
+    public GameObject msnImg;
 
 
 
@@ -91,15 +93,16 @@ public class MsnManager : MonoBehaviour
             }
 
 
+
             for (int i = 0; i < _newText.chatText.Count; i++)//for each line in this message
             {
                 if (i == 0)//check if it is the 1st message so the name is added
                 {
-                    _currentTab.displayedText.Add("[" + _newText.characterName + "] " + _newText.chatText[i]);
+                    _currentTab.displayedText.Add("" + _newText.characterName + ": \t" + _newText.chatText[i]);
                 }
                 else//dont add name
                 {
-                    _currentTab.displayedText.Add(_newText.chatText[i]);
+                    _currentTab.displayedText.Add("" + _newText.chatText[i]);
                 }
 
 
@@ -109,11 +112,11 @@ public class MsnManager : MonoBehaviour
                     GameObject newText = Instantiate(textPrefab, generalTextContainer.transform);//create a new line        
                     if (i == 0)//check if it is the 1st message so the name is added
                     {
-                        newText.GetComponent<TextMeshProUGUI>().text = "[" + _newText.characterName + "] " + _newText.chatText[i];
+                        newText.GetComponent<TextMeshProUGUI>().text = "" + _newText.characterName + ": \t" + _newText.chatText[i];
                     }
                     else//dont add name
                     {
-                        newText.GetComponent<TextMeshProUGUI>().text = _newText.chatText[i];
+                        newText.GetComponent<TextMeshProUGUI>().text = "" + _newText.chatText[i];
                     }
                     _currentTab.currentText += 1;
                     //chatNumb[0] += 1;//current chat possion
@@ -237,6 +240,8 @@ public class MsnManager : MonoBehaviour
 
         //set type
         newTab.type = _newCov.chatType;
+
+        newTab.msnImg = _newCov.msnIcon;
 
         //start at 0 chat
         newTab.currentText = 0;
@@ -386,6 +391,7 @@ public class MsnManager : MonoBehaviour
 
     public void TabsButton(int _tabNum)
     {
+        msnImg.GetComponent<Image>().sprite = tabs[currentChat].msnImg;
         tabs[currentChat].tabObj.GetComponent<TabController>().NotSelected();
         currentChat = _tabNum;
 
@@ -466,7 +472,7 @@ public class MsnManager : MonoBehaviour
         {
             if (i == 0)//check if it is the 1st message so the name is added
             {
-                tabs[currentChat].displayedText.Add("[" + manager.playerName + "] " + _nextText.playerAwnser[i]);
+                tabs[currentChat].displayedText.Add("" + manager.playerName + ": \t " + _nextText.playerAwnser[i]);
             }
             else//dont add name
             {
@@ -480,7 +486,7 @@ public class MsnManager : MonoBehaviour
                 GameObject newText = Instantiate(textPrefab, generalTextContainer.transform);//create a new line        
                 if (i == 0)//check if it is the 1st message so the name is added
                 {
-                    newText.GetComponent<TextMeshProUGUI>().text = "[" + manager.playerName + "] " + _nextText.playerAwnser[i];
+                    newText.GetComponent<TextMeshProUGUI>().text = "" + manager.playerName + ": \t " + _nextText.playerAwnser[i];
                 }
                 else//dont add name
                 {
