@@ -17,3 +17,11 @@ MonoBehaviour:
   tooltipInfo: 'Noel The Nice
 
     <House Party>'
+  playerIcon: {fileID: 0}
+  affiliationIcon: {fileID: 0}
+  rpName: 
+  eyeColour: 
+  height: 
+  affiliation: 0
+  rpClass: 
+  description: 
