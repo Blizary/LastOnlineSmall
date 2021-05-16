@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PhotoButtons : MonoBehaviour
 {
-   
+    public Sprite img;
+    public PhotoFolderController photoController;
 
     // Start is called before the first frame update
     void Start()
@@ -16,5 +17,10 @@ public class PhotoButtons : MonoBehaviour
     void Update()
     {
        
+    }
+
+    public void OpenPic()
+    {
+        photoController.ShowPhoto(img);
     }
 }
