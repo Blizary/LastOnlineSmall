@@ -13,6 +13,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public float jumpStre;
     float turnSmoothVel;
     public GameObject followPlayer;
+    public GameObject model;
 
     public bool hasTarget;
     
@@ -31,6 +32,8 @@ public class ThirdPersonMovement : MonoBehaviour
         msnManager = GameObject.FindGameObjectWithTag("DesktopManager").GetComponent<DesktopManager>();
         chatManager = GameObject.FindGameObjectWithTag("ChatManager").GetComponent<ChatBoxManager>();
         doorsManager = GameObject.FindGameObjectWithTag("DoorsManager").GetComponent<DoorsManager>();
+
+       
     }
 
     // Update is called once per frame
@@ -49,8 +52,8 @@ public class ThirdPersonMovement : MonoBehaviour
 
             //movement
             if (dir.magnitude >= 0.1f)
-            {  
-
+            {
+                model.GetComponent<Animator>().SetBool("Walking", true);
                 float targetAngle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
                 float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVel, rotSpeed);
                 transform.rotation = Quaternion.Euler(0f, angle, 0f);
@@ -61,6 +64,10 @@ public class ThirdPersonMovement : MonoBehaviour
                 controller.SimpleMove(moveDir.normalized * speed * Time.deltaTime);
 
                
+            }
+            else
+            {
+                model.GetComponent<Animator>().SetBool("Walking", false);
             }
 
 

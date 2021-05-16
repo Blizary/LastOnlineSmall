@@ -21,7 +21,6 @@ public class ScrollingTextManager : MonoBehaviour
 
     public void PlayButton()
     {
-        Debug.Log("play yo");
         StartCoroutine(Play());
     }
 
