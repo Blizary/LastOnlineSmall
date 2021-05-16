@@ -15,7 +15,8 @@ MonoBehaviour:
   characterName: blaz3_
   chatText:
   - alrighty.
-  - well im off now. i kinda feel awkward xD
+  - 'well im off now. '
+  - i kinda feel awkward xD
   - 'ill msg u maybe tomorrow? '
   - byeeeeeee
   timer: 5

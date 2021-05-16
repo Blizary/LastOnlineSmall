@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   feelingName: far east movement - like a G6!
   playerAwnser:
-  - far east movement put out like a g6
-  - and it's making me feel wiiiickeeeedd!!
+  - far east movement!
+  - they put out like a g6
+  - and it's making me feel
+  - wiiiickeeeedd!!
   npcAnwser: {fileID: 11400000, guid: e2995896b4c214c4baf0128054e2c8b7, type: 2}
   triggersEvents: 0
   nextEvent: 0

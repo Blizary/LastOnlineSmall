@@ -15,8 +15,10 @@ MonoBehaviour:
   characterName: blaz3_
   chatText:
   - actually get wrecked!
-  - well {PLAYERNAME}
+  - well sk8rgalllll
   - come with me.
   timer: 3
   options:
   - {fileID: 11400000, guid: 6f2a65e2dac05274dbb722f3b17d5ac5, type: 2}
+  nextNpcText: {fileID: 0}
+  speaker: 

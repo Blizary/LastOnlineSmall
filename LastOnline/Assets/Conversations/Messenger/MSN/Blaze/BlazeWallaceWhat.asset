@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: blaz3_
   chatText:
-  - haha looks like its not shown in uk anywayzz
-  - lol guess u gotta rely wallace and gromitttt now xD
+  - haha looks like its not shown
+  - in uk anywayzz
+  - lol guess u gotta rely wallace
+  - ' and gromitttt now xD'
   timer: 5
   options:
   - {fileID: 11400000, guid: e6d6bbf757730a749bc80b1cb4ad46a3, type: 2}

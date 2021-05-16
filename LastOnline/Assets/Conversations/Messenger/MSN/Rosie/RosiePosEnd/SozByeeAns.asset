@@ -15,7 +15,8 @@ MonoBehaviour:
   feelingName: soz i gtg
   playerAwnser:
   - sorryyyyyy i gtg
-  - im being called off the computer D;
+  - 'im being called off the computer '
+  - D;
   npcAnwser: {fileID: 11400000, guid: 59cb3b11698aadb478fe0142c88a66bf, type: 2}
   triggersEvents: 0
   nextEvent: 0

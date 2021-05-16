@@ -15,7 +15,8 @@ MonoBehaviour:
   characterName: blaz3_
   chatText:
   - lollol.
-  - u checked out any new tunezzz lately?
+  - u checked out any
+  - new tunezzz lately?
   timer: 5
   options:
   - {fileID: 11400000, guid: 5e6412c347b7f874ea7915de21c0de98, type: 2}

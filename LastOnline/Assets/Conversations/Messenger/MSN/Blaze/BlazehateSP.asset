@@ -14,9 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: blaz3_
   chatText:
-  - :ooooo how could u say such a thing?!
-  - just cos theres no funny british cartoons dont be hurt :p
-  - what u got?! wallace and gromitttt xD
+  - :ooooo
+  - how could u say such a thing?!
+  - just cos theres no funny
+  - british cartoons dont be hurt :p
+  - 'what u got?! '
+  - wallace and gromitttt xD
   timer: 5
   options:
   - {fileID: 11400000, guid: ba24565d84d07cf44963e96aefc7d747, type: 2}

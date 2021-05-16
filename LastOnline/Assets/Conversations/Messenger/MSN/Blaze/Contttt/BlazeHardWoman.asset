@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: blaz3_
   chatText:
-  - wow u r a hard woman to pleease indeed!!! :p
-  - lolz. u been listening to any new tunes recently?
+  - wow u r a hard woman
+  - to pleease indeed!!! :p
+  - lolz. u been listening
+  - to any new tunes recently?
   - gotta be some music ya like.
   timer: 5
   options:

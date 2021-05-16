@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   feelingName: dont like that one neither lolz
   playerAwnser:
-  - dont like any of em hahahaha :L
+  - dont like any of em
+  - hahahaha :L
   npcAnwser: {fileID: 11400000, guid: 358bdcfa4fda13b489c3342690723e61, type: 2}
   triggersEvents: 0
   nextEvent: 0

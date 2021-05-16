@@ -15,7 +15,8 @@ MonoBehaviour:
   feelingName: me too :o
   playerAwnser:
   - me too.
-  - damn. i bet i look like a right bellend
+  - damn. i bet i look
+  - like a right bellend
   - :p
   npcAnwser: {fileID: 11400000, guid: 416b63c27173ef94389d04fd71b19e31, type: 2}
   triggersEvents: 1

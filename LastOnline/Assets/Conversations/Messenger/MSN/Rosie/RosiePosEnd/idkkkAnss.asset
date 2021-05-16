@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   feelingName: idk...
   playerAwnser:
-  - my brother needs to do his homework :(
+  - my brother needs to do
+  - his homework :(
   npcAnwser: {fileID: 11400000, guid: 8461d14b71394c449a008663a73caba2, type: 2}
   triggersEvents: 1
   nextEvent: 6

@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: blaz3_
   chatText:
-  - ok ok british tv is a touchy subject riteee? ;)
-  - lolzz.
-  - u been listening to any new tunes recently anywayzz?
+  - ok ok british tv is a
+  - touchy subject riteee? ;)
+  - u been listening to any new tunes
+  - recently anywayzz?
   timer: 5
   options:
   - {fileID: 11400000, guid: 5e6412c347b7f874ea7915de21c0de98, type: 2}

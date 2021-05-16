@@ -15,7 +15,8 @@ MonoBehaviour:
   feelingName: leave wallace outta this!
   playerAwnser:
   - oi!
-  - wallace weren't lookin to be brought into this!
+  - wallace weren't lookin
+  - ' to be brought into this!'
   npcAnwser: {fileID: 11400000, guid: 576ee77d380ab084d93f8b1c5be3f45f, type: 2}
   triggersEvents: 0
   nextEvent: 0
