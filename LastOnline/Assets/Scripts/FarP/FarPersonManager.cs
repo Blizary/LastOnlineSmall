@@ -38,6 +38,10 @@ public class FarPersonManager : MonoBehaviour
     public Sprite rpFireFrame;
     public Sprite rpEarthFrame;
 
+    [Header("Item Read")]
+    public GameObject popUpItem;
+    public GameObject popUpText;
+
 
     public bool inChat;
     public GameObject player;
@@ -305,4 +309,15 @@ public class FarPersonManager : MonoBehaviour
         Application.Quit();
     }
    
+
+    public void InteractedWithItem(string _text)
+    {
+        popUpItem.SetActive(true);
+        popUpText.GetComponent<TextMeshProUGUI>().text = _text;
+    }
+
+    public void ClosePopUp()
+    {
+        popUpItem.SetActive(false);
+    }
 }

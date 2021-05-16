@@ -17,5 +17,5 @@ MonoBehaviour:
   - lets click around...
   - to see if i can find it...
   npcAnwser: {fileID: 0}
-  triggersEvents: 0
-  nextEvent: 0
+  triggersEvents: 1
+  nextEvent: 1

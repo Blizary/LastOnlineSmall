@@ -6,6 +6,7 @@ public class ThirdPersonMovement : MonoBehaviour
 {
     CharacterController controller;
     FarPersonManager manager;
+    DesktopManager msnManager;
     public Transform cam;
     public float speed;
     public float rotSpeed;
@@ -27,6 +28,7 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<FarPersonManager>();
+        msnManager = GameObject.FindGameObjectWithTag("DesktopManager").GetComponent<DesktopManager>();
         chatManager = GameObject.FindGameObjectWithTag("ChatManager").GetComponent<ChatBoxManager>();
         doorsManager = GameObject.FindGameObjectWithTag("DoorsManager").GetComponent<DoorsManager>();
     }
@@ -86,14 +88,19 @@ public class ThirdPersonMovement : MonoBehaviour
                 {
                     if (!Input.GetMouseButtonDown(0) && !Input.GetMouseButtonDown(1) && Input.anyKey)
                     {
-                        if (manager.CheckAwnserSize())
+                        if(manager.gameObject.activeInHierarchy)//in the mmo
                         {
-                            //chat is full
-                            manager.AwnserClearOne();
+                            if (manager.CheckAwnserSize())
+                            {
+                                //chat is full
+                                manager.AwnserClearOne();
+                            }
+
+                            manager.AddAwnser(currentAwnser[0]);
+                            currentAwnser = currentAwnser.Remove(0, 1);
                         }
 
-                        manager.AddAwnser(currentAwnser[0]);
-                        currentAwnser = currentAwnser.Remove(0, 1);
+                        
                     }
 
                 }
@@ -178,20 +185,24 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if(Physics.Raycast (ray, out hit,100.0f))
+        if (Physics.Raycast(ray, out hit, 100.0f))
         {
             //found a target
-            if(hit.transform.gameObject.GetComponent<NPCController>())
+            if (hit.transform.gameObject.GetComponent<NPCController>())
             {
                 //found a npc
                 manager.UpdateTarget(hit.transform.gameObject.GetComponent<NPCController>().npcInfo);
-                if(hit.transform.gameObject.GetComponent<NPCController>().npcInfo.rpName!=null)//there is an rp profile
+                if (hit.transform.gameObject.GetComponent<NPCController>().npcInfo.rpName != null)//there is an rp profile
                 {
                     manager.OpenRPPanel(hit.transform.gameObject.GetComponent<NPCController>().npcInfo);
                 }
             }
 
-
+            //found an interactable obj
+            if (hit.transform.gameObject.GetComponent<InteractObj>())
+            {
+                hit.transform.gameObject.GetComponent<InteractObj>().OnInteract();
+            }
         }
        
     }

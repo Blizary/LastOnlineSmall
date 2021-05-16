@@ -13,4 +13,5 @@ public class Tab
     public int tabNum;
     public ChatText lastMessage;
     public GameObject tabObj;
+    public Sprite msnImg;
 }

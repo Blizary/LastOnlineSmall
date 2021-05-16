@@ -17,5 +17,5 @@ MonoBehaviour:
   - 'hehehehe :p '
   - lol xD
   npcAnwser: {fileID: 11400000, guid: 6de8be57a24bf1e49a95939212555e02, type: 2}
-  triggersEvents: 0
-  nextEvent: 1
+  triggersEvents: 1
+  nextEvent: 4

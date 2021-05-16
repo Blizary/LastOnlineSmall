@@ -14,5 +14,6 @@ public class ChatConv : ScriptableObject
 {
     public ChatType chatType;
     public List<ChatText> conversation;
+    public Sprite msnIcon;
 
 }

@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/PC/LogInScreen.unity
+    guid: 12ca86a699ffe7041828705031865da6
+  - enabled: 1
+    path: Assets/Scenes/PC/LoadingScreen.unity
+    guid: 91d09e249d49646439e6b281884b0a7a
+  - enabled: 1
+    path: Assets/Scenes/PC/ScrollingText.unity
+    guid: acd9fb81a19309c4889830d975b43630
+  - enabled: 1
+    path: Assets/Scenes/Game/GameProgramming.unity
+    guid: 9288e3bc025737c418f680e526f1cfc0
   m_configObjects: {}

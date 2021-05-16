@@ -17,5 +17,5 @@ MonoBehaviour:
   - yh not bad
   - been a while hey?
   npcAnwser: {fileID: 11400000, guid: 6f74424dfb0ba3e4b8f389b6a2fd87b8, type: 2}
-  triggersEvents: 0
+  triggersEvents: 1
   nextEvent: 0

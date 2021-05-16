@@ -17,5 +17,5 @@ MonoBehaviour:
   - hey dude! u gd?
   - long time no see!
   npcAnwser: {fileID: 11400000, guid: b9248769d30eb384c927113d308d2d38, type: 2}
-  triggersEvents: 0
-  nextEvent: 0
+  triggersEvents: 1
+  nextEvent: 4

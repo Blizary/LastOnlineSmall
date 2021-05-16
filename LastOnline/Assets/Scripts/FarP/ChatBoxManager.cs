@@ -14,6 +14,8 @@ public class ChatBoxManager : MonoBehaviour
     public GameObject UITrash;
     public GameObject optionsPanel;
 
+    public ChatOption foundKnifeMessage;
+
     public int maxNumOfMessages;//maximun amount of shown messages at 1 time
     public float inactivityChatTimer;// amount of time after witch the chat resets to the latest messages
     private float innerInactivityChatTimer;
@@ -68,7 +70,6 @@ public class ChatBoxManager : MonoBehaviour
                 for (int i = 0; i < _newText.chatText.Count; i++)//for each line in this message
                 {
                     textbubble += _newText.chatText[i] + "\n";
-                    Debug.Log(textbubble);
                 }
                 if (GameObject.Find(_newText.speaker))
                 {
@@ -165,6 +166,7 @@ public class ChatBoxManager : MonoBehaviour
             }
 
         }
+       
 
     }
 
@@ -210,6 +212,40 @@ public class ChatBoxManager : MonoBehaviour
 
 
         }
+    }
+
+    public void AddChat(ChatConv _newCov)
+    {
+        Tab newTab = new Tab();
+        //get the name
+        if (_newCov.chatType == ChatType.chatPublic)
+        { 
+        }
+        else if (_newCov.chatType == ChatType.chatSay)
+        {
+            newTab.tabName = "Say";
+        }
+        else
+        {
+            newTab.tabName = _newCov.conversation[0].characterName;
+        }
+
+        //get the conversation
+        newTab.tabChat = _newCov.conversation;
+
+        //set type
+        newTab.type = _newCov.chatType;
+
+        //start at 0 chat
+        newTab.currentText = 0;
+        //inicialize lists
+        newTab.displayedText = new List<string>();
+        newTab.tabNum = tabs.Count;
+
+        tabs.Add(newTab);
+
+        StartCoroutine(WaitForNextSentence(tabs[newTab.tabNum-1].tabChat[0].timer,newTab, 0, null));
+
     }
 
 
@@ -390,8 +426,16 @@ public class ChatBoxManager : MonoBehaviour
         manager.CloseChat();
 
         //update the choices
+
+        //clear options
+        for (int i = 0; i < optionsPanel.transform.childCount; i++)
+        {
+            optionsPanel.transform.GetChild(i).gameObject.GetComponent<ChoiceController>().ClearValues();
+        }
+
         for (int i = 0; i < tabs[currentChat].lastMessage.options.Count; i++)
         {
+            optionsPanel.transform.GetChild(i).gameObject.SetActive(true);
             optionsPanel.transform.GetChild(i).GetComponent<ChoiceController>().SetValues(tabs[currentChat].lastMessage.options[i]);
         }
         
@@ -427,58 +471,70 @@ public class ChatBoxManager : MonoBehaviour
 
     public void SendAwnser(ChatOption _nextText)
     {
-        playerController.currentAwnser = "";
-        playerController.currentOption = null;
-        manager.ClearAwnser();
+        
+            playerController.currentAwnser = "";
+            playerController.currentOption = null;
+            manager.ClearAwnser();
 
-        //print awnser
+            //print awnser
 
-        for (int i = 0; i < _nextText.playerAwnser.Count; i++)//for each line in this message
-        {
-            if (i == 0)//check if it is the 1st message so the name is added
+            for (int i = 0; i < _nextText.playerAwnser.Count; i++)//for each line in this message
             {
-                tabs[currentChat].displayedText.Add("[" + manager.playerName + "] " + _nextText.playerAwnser[i]);
-            }
-            else//dont add name
-            {
-                tabs[currentChat].displayedText.Add(_nextText.playerAwnser[i]);
-            }
-
-
-            //check if the scroll up is active
-            if (!scrolling && currentChat == tabs[currentChat].tabNum)
-            {
-                GameObject newText = Instantiate(textPrefab, generalTextContainer.transform);//create a new line        
                 if (i == 0)//check if it is the 1st message so the name is added
                 {
-                    newText.GetComponent<TextMeshProUGUI>().text = "[" + manager.playerName + "] " + _nextText.playerAwnser[i];
+                    tabs[currentChat].displayedText.Add("[" + manager.playerName + "] " + _nextText.playerAwnser[i]);
                 }
                 else//dont add name
                 {
-                    newText.GetComponent<TextMeshProUGUI>().text = _nextText.playerAwnser[i];
+                    tabs[currentChat].displayedText.Add(_nextText.playerAwnser[i]);
                 }
-                tabs[currentChat].currentText += 1;
-                //chatNumb[0] += 1;//current chat possion
 
-                CheckOverflow(0);//check if overflow
+
+                //check if the scroll up is active
+                if (!scrolling && currentChat == tabs[currentChat].tabNum)
+                {
+                    GameObject newText = Instantiate(textPrefab, generalTextContainer.transform);//create a new line        
+                    if (i == 0)//check if it is the 1st message so the name is added
+                    {
+                        newText.GetComponent<TextMeshProUGUI>().text = "[" + manager.playerName + "] " + _nextText.playerAwnser[i];
+                    }
+                    else//dont add name
+                    {
+                        newText.GetComponent<TextMeshProUGUI>().text = _nextText.playerAwnser[i];
+                    }
+                    tabs[currentChat].currentText += 1;
+                    //chatNumb[0] += 1;//current chat possion
+
+                    CheckOverflow(0);//check if overflow
+                }
+
+
             }
 
+            //close options
+            manager.CloseChat();
 
-        }
-
-        //close options
-        manager.CloseChat();
-
-        if (_nextText.npcAnwser.options.Count != 0)
+        if (_nextText.npcAnwser)
         {
-            StartCoroutine(WaitForNextSentence(_nextText.npcAnwser.timer, tabs[currentChat], 1, _nextText.npcAnwser));
-        }
-        else
-        {
-            StartCoroutine(WaitForNextSentence(_nextText.npcAnwser.timer, tabs[currentChat], tabs[currentChat].tabChat.Count - 1, _nextText.npcAnwser));
+            if (_nextText.npcAnwser.options.Count != 0)
+            {
+                StartCoroutine(WaitForNextSentence(_nextText.npcAnwser.timer, tabs[currentChat], 1, _nextText.npcAnwser));
+            }
+            else
+            {
+                StartCoroutine(WaitForNextSentence(_nextText.npcAnwser.timer, tabs[currentChat], tabs[currentChat].tabChat.Count - 1, _nextText.npcAnwser));
+            }
         }
 
+        
 
+
+    }
+
+
+    public void KnifeFound()
+    {
+        SendAwnser(foundKnifeMessage);
     }
 
 
