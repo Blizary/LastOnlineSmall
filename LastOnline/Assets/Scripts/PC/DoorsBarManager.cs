@@ -9,11 +9,15 @@ public class DoorsBarManager : MonoBehaviour
     [SerializeField] private GameObject messengerView;
     [SerializeField] private GameObject musicFolderView;
     [SerializeField] private GameObject photoFolderView;
+    [SerializeField] private GameObject photoShow;
+
+
+    public AudioSource tavernMusic;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame
@@ -29,11 +33,13 @@ public class DoorsBarManager : MonoBehaviour
         {
             windowView.SetActive(true);
             gameView.SetActive(false);
+            tavernMusic.Pause();
         }
         else
         {
             windowView.SetActive(false);
             gameView.SetActive(true);
+            tavernMusic.UnPause();
         }
         
     }
@@ -109,5 +115,16 @@ public class DoorsBarManager : MonoBehaviour
     public void ClosePhotoFolder()
     {
         photoFolderView.SetActive(false);
+        ClosePhotoShow();
+    }
+
+    public void OpenPhotoShow()
+    {
+        photoShow.SetActive(true);
+    }
+
+    public void ClosePhotoShow()
+    {
+        photoShow.SetActive(false);
     }
 }

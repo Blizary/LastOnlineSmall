@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 6877596287587421899}
   - component: {fileID: 6877596287587430708}
   - component: {fileID: 6877596287587430709}
+  - component: {fileID: 8010801419425889190}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -229,6 +230,20 @@ MonoBehaviour:
   chatBubble: {fileID: 7796556090246877761}
   model: {fileID: 6323995120719133850}
   rpMovement: []
+  rosieEnter: []
+--- !u!114 &8010801419425889190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6877596287587430711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184a4c24c5a7360409aaecf61753799f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookAtCam: {fileID: 0}
 --- !u!1 &6877596287691419660
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,6 +401,14 @@ PrefabInstance:
     - target: {fileID: 5691554847530699687, guid: 20b59ed38db06ce438c3bc1d78319160, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691554849023218367, guid: 20b59ed38db06ce438c3bc1d78319160, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a6c69816d104dc4f89fbce1c83f1c13, type: 3}
+    - target: {fileID: 5691554849023218367, guid: 20b59ed38db06ce438c3bc1d78319160, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b59ed38db06ce438c3bc1d78319160, type: 3}
