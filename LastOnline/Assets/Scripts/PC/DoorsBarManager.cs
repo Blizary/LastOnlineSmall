@@ -49,6 +49,7 @@ public class DoorsBarManager : MonoBehaviour
     {
         windowView.SetActive(true);
         gameView.SetActive(false);
+        tavernMusic.Pause();
     }
 
     public void MusicFolderBarButton()
@@ -99,6 +100,7 @@ public class DoorsBarManager : MonoBehaviour
             messengerView.SetActive(true);
         }
 
+        tavernMusic.Pause();
         windowView.SetActive(true);
         gameView.SetActive(false);
         StopBlinkMsn();

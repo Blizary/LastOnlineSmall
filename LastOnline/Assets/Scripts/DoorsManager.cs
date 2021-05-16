@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public enum IngameEvent
 {
@@ -11,6 +12,7 @@ public enum IngameEvent
     RosieEnter,
     BlazeOff,
     RosieOff,
+    Credits,
 }
 public class DoorsManager : MonoBehaviour
 {
@@ -28,6 +30,9 @@ public class DoorsManager : MonoBehaviour
     public UnityEvent rosieEnter;
     public UnityEvent blazeLogsOff;
     public UnityEvent rosieLogsOff;
+
+    public string nextScene;
+    public GameObject fade;
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +75,10 @@ public class DoorsManager : MonoBehaviour
             case IngameEvent.FriendLogOff:
                 Debug.Log("Friend log off event started");
                 break;
+            case IngameEvent.Credits:
+                Debug.Log("Game end");
+                Credits();
+                break;
 
         }
     }
@@ -84,7 +93,22 @@ public class DoorsManager : MonoBehaviour
     {
         yield return new WaitForSeconds(_time);
         msnManager.AddChat(_newConvo);
-        msnManager.AddChat(girlMSNConvo);
+
 
     }
+
+
+    public void Credits()
+    {
+        StartCoroutine(CreditsIE());
+    }
+
+    IEnumerator CreditsIE()
+    {
+
+        fade.GetComponent<Animator>().SetTrigger("Fade");
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene(nextScene);
+    }
+
 }

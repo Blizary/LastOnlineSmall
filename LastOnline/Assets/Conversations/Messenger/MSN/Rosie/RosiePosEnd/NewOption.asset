@@ -16,6 +16,6 @@ MonoBehaviour:
   playerAwnser:
   - okieee
   - i can't wait <3
-  npcAnwser: {fileID: 0}
-  triggersEvents: 0
-  nextEvent: 0
+  npcAnwser: {fileID: 11400000, guid: c3b6f2c00c1b8ae4ba755b8afb91a8f6, type: 2}
+  triggersEvents: 1
+  nextEvent: 6

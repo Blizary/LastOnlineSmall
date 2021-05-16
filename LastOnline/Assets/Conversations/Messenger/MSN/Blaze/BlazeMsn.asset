@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22244fcb5c324ad41ac21e0da59eec6b, type: 3}
   m_Name: BlazeMsn
   m_EditorClassIdentifier: 
-  chatType: 0
+  chatType: 1
   conversation:
   - {fileID: 11400000, guid: 9b88d4c06767f634687d0d148f957061, type: 2}
+  - {fileID: 0}
   msnIcon: {fileID: 21300000, guid: 818b3850fd0870c4bb909cbd2dd41bfc, type: 3}

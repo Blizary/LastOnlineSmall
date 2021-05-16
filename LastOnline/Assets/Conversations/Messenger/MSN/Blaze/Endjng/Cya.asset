@@ -16,5 +16,5 @@ MonoBehaviour:
   playerAwnser:
   - cyaa.
   npcAnwser: {fileID: 11400000, guid: 6f7b17e615f2f8345a28322d7979bc3f, type: 2}
-  triggersEvents: 0
-  nextEvent: 0
+  triggersEvents: 1
+  nextEvent: 6

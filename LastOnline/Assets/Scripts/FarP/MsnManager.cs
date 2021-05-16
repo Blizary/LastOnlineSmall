@@ -65,6 +65,11 @@ public class MsnManager : MonoBehaviour
     /// <param name="_nextMessage"></param>
     void ReadNextMessage(int _message, ChatText _newText, Tab _currentTab)
     {
+        if (!barManager.messengerView.activeInHierarchy)
+        {
+            barManager.BlinkMsn();
+        }
+        
         if (_newText != null)
         {
             //if its in say chat and has a speaker trigger the chat ballons
@@ -100,7 +105,7 @@ public class MsnManager : MonoBehaviour
             {
                 if (i == 0)//check if it is the 1st message so the name is added
                 {
-                    _currentTab.displayedText.Add("" + _newText.characterName + ": \t" + _newText.chatText[i]);
+                    _currentTab.displayedText.Add("" + _newText.characterName + ": " + _newText.chatText[i]);
                 }
                 else//dont add name
                 {
@@ -114,7 +119,7 @@ public class MsnManager : MonoBehaviour
                     GameObject newText = Instantiate(textPrefab, generalTextContainer.transform);//create a new line        
                     if (i == 0)//check if it is the 1st message so the name is added
                     {
-                        newText.GetComponent<TextMeshProUGUI>().text = "" + _newText.characterName + ": \t" + _newText.chatText[i];
+                        newText.GetComponent<TextMeshProUGUI>().text = "" + _newText.characterName + ": " + _newText.chatText[i];
                     }
                     else//dont add name
                     {
@@ -221,10 +226,7 @@ public class MsnManager : MonoBehaviour
 
     public void AddChat(ChatConv _newCov)
     {
-        if (!barManager.messengerView.activeInHierarchy)
-        {
-            barManager.BlinkMsn();
-        }
+        
 
         Debug.Log("got into add chat");
         Tab newTab = new Tab();
@@ -479,7 +481,7 @@ public class MsnManager : MonoBehaviour
         {
             if (i == 0)//check if it is the 1st message so the name is added
             {
-                tabs[currentChat].displayedText.Add("" + manager.playerName + ": \t " + _nextText.playerAwnser[i]);
+                tabs[currentChat].displayedText.Add("" + manager.playerName + ":  " + _nextText.playerAwnser[i]);
             }
             else//dont add name
             {
@@ -493,7 +495,7 @@ public class MsnManager : MonoBehaviour
                 GameObject newText = Instantiate(textPrefab, generalTextContainer.transform);//create a new line        
                 if (i == 0)//check if it is the 1st message so the name is added
                 {
-                    newText.GetComponent<TextMeshProUGUI>().text = "" + manager.playerName + ": \t " + _nextText.playerAwnser[i];
+                    newText.GetComponent<TextMeshProUGUI>().text = "" + manager.playerName + ":  " + _nextText.playerAwnser[i];
                 }
                 else//dont add name
                 {

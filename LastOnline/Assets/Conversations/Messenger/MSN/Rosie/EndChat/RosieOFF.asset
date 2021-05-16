@@ -9,11 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22244fcb5c324ad41ac21e0da59eec6b, type: 3}
-  m_Name: RosieMSN
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: RosieOFF
   m_EditorClassIdentifier: 
-  chatType: 1
-  conversation:
-  - {fileID: 11400000, guid: e7b6b5b4c94fdd0479fa31886063e6fe, type: 2}
-  - {fileID: 0}
-  msnIcon: {fileID: 21300000, guid: 559bff9023e3424468f69286cb6dad82, type: 3}
+  characterName: 
+  chatText:
+  - '*ROSIE IS OFFLINE*'
+  timer: 0
+  options: []
+  nextNpcText: {fileID: 0}
+  speaker: 

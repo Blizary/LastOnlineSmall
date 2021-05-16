@@ -16,5 +16,5 @@ MonoBehaviour:
   playerAwnser:
   - good fuckin riddancel.
   npcAnwser: {fileID: 11400000, guid: 25aab2796538ebb4180cf8f49fb41cc0, type: 2}
-  triggersEvents: 0
-  nextEvent: 0
+  triggersEvents: 1
+  nextEvent: 6

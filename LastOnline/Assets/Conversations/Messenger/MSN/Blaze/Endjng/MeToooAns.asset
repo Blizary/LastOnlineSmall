@@ -18,5 +18,5 @@ MonoBehaviour:
   - damn. i bet i look like a right bellend
   - :p
   npcAnwser: {fileID: 11400000, guid: 416b63c27173ef94389d04fd71b19e31, type: 2}
-  triggersEvents: 0
-  nextEvent: 0
+  triggersEvents: 1
+  nextEvent: 6
