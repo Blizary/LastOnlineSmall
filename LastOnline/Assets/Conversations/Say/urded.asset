@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - Shut up ur dead
   - He was stabbed
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 905f3c04217bc4c4eab9ccfb56cb5b9d, type: 2}
   speaker: DarkWeb

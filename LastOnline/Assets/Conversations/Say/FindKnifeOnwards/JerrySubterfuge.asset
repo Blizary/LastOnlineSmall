@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: __jerry
   chatText:
   - We believe it to be subterfuge!
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 6dc1eb007d666ec43adcea38c527c639, type: 2}
-  speaker: _jerry
+  speaker: Jerry

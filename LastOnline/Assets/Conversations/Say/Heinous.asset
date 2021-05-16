@@ -17,7 +17,7 @@ MonoBehaviour:
   - Good heavens!
   - What kind of vile fiend
   - would commit such a heinous act?
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 98a4b6e08cb52c5488e0f839afb0562f, type: 2}
   speaker: Jerry

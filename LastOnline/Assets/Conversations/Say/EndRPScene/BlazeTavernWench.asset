@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - tavern wench?
   - i dunnooo
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 920960d53270cbe46ba9cc8b4c581de2, type: 2}
-  speaker: blaz3_
+  speaker: Blaze

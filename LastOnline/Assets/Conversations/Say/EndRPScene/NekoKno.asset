@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: babii_nek0
   chatText:
   - bet u wud kno ;)
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 9cea6105fc1522140991bac7df6c0021, type: 2}
-  speaker: babii_nek0
+  speaker: Neko

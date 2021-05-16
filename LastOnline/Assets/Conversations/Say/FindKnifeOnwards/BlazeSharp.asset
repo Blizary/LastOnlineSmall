@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: blaz3_
   chatText:
   - "She\u2019s sharp this one"
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: f00128045a2b4b445b867bc0643f312b, type: 2}
-  speaker: blaz3_
+  speaker: Blaze

@@ -17,7 +17,7 @@ MonoBehaviour:
   - yeh
   - ive known Jerry for aaaaages
   - hes always like that
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: bf7be93a2d1ac98469d7e61e3bd8f0d2, type: 2}
-  speaker: rosie_ple4se
+  speaker: Rosie

@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - Jerry! Did u just say something
   - actually helpful?
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: c825146408715db4bb75808322649026, type: 2}
-  speaker: blaz3_
+  speaker: Blaze

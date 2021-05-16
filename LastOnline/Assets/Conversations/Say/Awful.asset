@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - Yes, over here
   - it was awful
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: e7ca015485da8ae4ba65e5afcad476d6, type: 2}
   speaker: Tulisa

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73afa3e0513ea954ca26c76194ae049a, type: 3}
+  m_Name: SureAznsss
+  m_EditorClassIdentifier: 
+  feelingName: sure go ahead
+  playerAwnser:
+  - sure go ahead.
+  - 'tell me allllll :D '
+  npcAnwser: {fileID: 11400000, guid: d9aa4c6f05ce35d48b928777cb18974a, type: 2}
+  triggersEvents: 0
+  nextEvent: 0

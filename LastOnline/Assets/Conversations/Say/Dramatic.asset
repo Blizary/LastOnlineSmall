@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - alrite love
   - 'bit dramatic eh? '
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: fa0c8da47a2c0144ba546b42848d3326, type: 2}
   speaker: Oskar

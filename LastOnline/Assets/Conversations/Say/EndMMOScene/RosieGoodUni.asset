@@ -17,10 +17,10 @@ MonoBehaviour:
   - theyre good unis right?!
   - i have thought abt brighton. and bristol.
   - u thought abt those too?
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: fd03eb5fcda1554419e39c0a1a590c6b, type: 2}
   - {fileID: 11400000, guid: 16ab02cb18bd6cf42be4dbab7a61aeec, type: 2}
   - {fileID: 11400000, guid: 2be79a304aee4b141bbee61566c349a4, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: rosie_ple4se
+  speaker: Rosie

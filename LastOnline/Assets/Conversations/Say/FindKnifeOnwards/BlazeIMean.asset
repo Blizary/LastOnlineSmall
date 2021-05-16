@@ -16,8 +16,8 @@ MonoBehaviour:
   chatText:
   - errr
   - i meant u and sk8rgal?
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: 90e8c673d0652094f994493a576b6442, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: blaz3_
+  speaker: Blaze

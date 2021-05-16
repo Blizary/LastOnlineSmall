@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: BlazeHey
+  m_EditorClassIdentifier: 
+  characterName: blaz3_
+  chatText:
+  - 'heyyy hey hey '
+  - 'wuu2? '
+  timer: 5
+  options:
+  - {fileID: 11400000, guid: 26fe96317d17ca24eac5234dc732193b, type: 2}
+  - {fileID: 11400000, guid: 76d8df89d7347454d815b2634b869d75, type: 2}
+  - {fileID: 11400000, guid: 519840b8dc957f446afa24e15a0adf86, type: 2}
+  nextNpcText: {fileID: 0}
+  speaker: 

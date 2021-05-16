@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: rosie_ple4se
   chatText:
   - "How\u2019d u figure that?"
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: ba365b1195d44cc48b2f2f6f869380dd, type: 2}
-  speaker: rosie_ple4se
+  speaker: Rosie

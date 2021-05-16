@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - dont forget
   - its an RP event rosie
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 301c6c4ed99585a44bdfd105437fd93d, type: 2}
-  speaker: Tulisaa
+  speaker: Tulisa

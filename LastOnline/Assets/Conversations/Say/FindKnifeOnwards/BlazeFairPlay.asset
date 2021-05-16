@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: blaz3_
   chatText:
   - ok yh fair play lol
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 38062fe3d6c8f814b9da2bd06c57634c, type: 2}
-  speaker: blaz3_
+  speaker: Blaze

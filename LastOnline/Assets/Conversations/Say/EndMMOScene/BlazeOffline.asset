@@ -18,7 +18,7 @@ MonoBehaviour:
   - see ur busy there with rosieee
   - my moms is callin me for sm
   - BYYYYYYYYYEEEEEEE
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: ce98256b0e4be254a9454ad98c21c7d8, type: 2}
-  speaker: blaz3_
+  speaker: Blaze

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: BlazeOffline
+  m_EditorClassIdentifier: 
+  characterName: blaz3_
+  chatText:
+  - alrighty.
+  - well im off now. i kinda feel awkward xD
+  - 'ill msg u maybe tomorrow? '
+  - byeeeeeee
+  timer: 5
+  options:
+  - {fileID: 11400000, guid: 15ef8911528c58a4f9468b3011ab74fc, type: 2}
+  - {fileID: 11400000, guid: a1d5252f4d873fe479747d3d20da5a9f, type: 2}
+  - {fileID: 11400000, guid: 9af22be753df92d4b8eb226b5d4b25d2, type: 2}
+  nextNpcText: {fileID: 0}
+  speaker: 

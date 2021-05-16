@@ -17,7 +17,7 @@ MonoBehaviour:
   - what dastardly deviousness
   - ' hath fallen upon this joyous tavern?'
   - A murder most foul!!
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 28ccba856e1ab234b80b78dc80bb5eff, type: 2}
   speaker: Jerry

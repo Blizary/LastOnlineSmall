@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: rosie_ple4se
   chatText:
   - hey jerry
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 2baedbc94fe74494da07211f28b3d279, type: 2}
-  speaker: rosie_ple4se
+  speaker: Rosie

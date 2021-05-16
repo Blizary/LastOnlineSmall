@@ -17,10 +17,10 @@ MonoBehaviour:
   - '*ahem*'
   - so holmes,
   - how goes the investigation?
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: 68e43463248984a4c9b75ba74e693d4b, type: 2}
   - {fileID: 11400000, guid: 4acf3aa03cbeeff48b46537b1373bfc9, type: 2}
   - {fileID: 11400000, guid: 50269e064dd8afb47b60eae23010e35e, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: blaz3_
+  speaker: Blaze

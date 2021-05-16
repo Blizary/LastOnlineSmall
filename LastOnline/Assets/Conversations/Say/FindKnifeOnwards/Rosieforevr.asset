@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - like
   - 4everrrrrrrrrrr
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: b0af1ba1e99602947938d1755f604bda, type: 2}
-  speaker: rosie_ple4se
+  speaker: Rosie

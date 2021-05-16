@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: RosieeeLikehe
+  m_EditorClassIdentifier: 
+  characterName: r0sie_1993
+  chatText:
+  - well. i see u around skl.
+  - and i really love how... smart u are.
+  - other things too.
+  - what im really trying to say is.
+  - i like u.
+  timer: 5
+  options:
+  - {fileID: 11400000, guid: 9b4916b29586bb84390d009a083ff467, type: 2}
+  nextNpcText: {fileID: 0}
+  speaker: 

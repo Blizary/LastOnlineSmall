@@ -18,10 +18,10 @@ MonoBehaviour:
   - i wanna get into one of the big unis.
   - ya know. oxford, cambridge?
   - reckon i would fit in?
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: 8410b7588d2c877419b1637673cc4ea4, type: 2}
   - {fileID: 11400000, guid: 651977b6b74aba444be1c004c1a1bf63, type: 2}
   - {fileID: 11400000, guid: c90bfca06f09ce04bb5a9f0eafff9e63, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: rosie_ple4se
+  speaker: Rosie

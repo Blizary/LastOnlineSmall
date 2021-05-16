@@ -18,7 +18,7 @@ MonoBehaviour:
   - lets inspect the murder scene
   - to identify the killer. jerry.
   - lets leave it up to our ace detective.
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 0176a5d73dda2164ea0ae28520dad061, type: 2}
   speaker: Blaze

@@ -17,7 +17,7 @@ MonoBehaviour:
   - we gotta look 4 a murder weapon?
   - right?
   - usually how these things go.
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: c6f4da685dc3e54428bf387755257b3a, type: 2}
   speaker: Blaze

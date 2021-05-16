@@ -18,4 +18,7 @@ MonoBehaviour:
   - I was hoping u would say me.
   - awwwwks. forget we chat this xD
   timer: 3
-  options: []
+  options:
+  - {fileID: 11400000, guid: be950e02e9404c94fa1296ee0e3e1ab3, type: 2}
+  nextNpcText: {fileID: 0}
+  speaker: 

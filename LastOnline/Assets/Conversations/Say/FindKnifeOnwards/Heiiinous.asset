@@ -16,8 +16,8 @@ MonoBehaviour:
   chatText:
   - But why
   - would a fiend commit such a heinous act?
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: 275c76fba5abffb45b006609591d6d3d, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: _jerry
+  speaker: Jerry

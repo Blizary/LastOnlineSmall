@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: Oskar_
   chatText:
   - Actually stfu right now
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 308ddef9a8a2cbb4aa75d62c5e10fa81, type: 2}
   speaker: Oskar

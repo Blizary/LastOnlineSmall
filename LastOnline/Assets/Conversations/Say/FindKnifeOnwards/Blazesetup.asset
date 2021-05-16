@@ -17,7 +17,7 @@ MonoBehaviour:
   - u make a decent point.
   - seems like they were trying
   - to set up the air covern!
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 804b83673d296ae41ac5a5503e979c97, type: 2}
-  speaker: blaz3_
+  speaker: Blaze

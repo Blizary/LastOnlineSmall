@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: dark_web
   chatText:
   - "We\u2019re not doing that, Jerry."
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 7b33c6d4016bc544586875f9f6043875, type: 2}
   speaker: DarkWeb

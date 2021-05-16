@@ -16,10 +16,10 @@ MonoBehaviour:
   chatText:
   - 'oh yep. finals. '
   - forgot about those coming...
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: c63801421d4a0cc4c921ad2d1a038329, type: 2}
   - {fileID: 11400000, guid: 870ff2cd033e30f468f197bb20065584, type: 2}
   - {fileID: 11400000, guid: fb92d7fbbc7be5347a90b2192bc5a039, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: rosie_ple4se
+  speaker: Rosie

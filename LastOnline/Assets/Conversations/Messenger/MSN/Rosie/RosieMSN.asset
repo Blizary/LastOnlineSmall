@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: RosieMSN
   m_EditorClassIdentifier: 
   chatType: 0
-  conversation: []
-  msnIcon: {fileID: 0}
+  conversation:
+  - {fileID: 11400000, guid: e7b6b5b4c94fdd0479fa31886063e6fe, type: 2}
+  msnIcon: {fileID: 21300000, guid: 559bff9023e3424468f69286cb6dad82, type: 3}

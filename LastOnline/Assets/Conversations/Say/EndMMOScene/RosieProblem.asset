@@ -16,10 +16,10 @@ MonoBehaviour:
   chatText:
   - huh?
   - whats his problem?
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: fa36dffa16d4fa24a974445b421f71bf, type: 2}
   - {fileID: 11400000, guid: f9aaed12a912dd7439ef927fa78b3c3b, type: 2}
   - {fileID: 11400000, guid: 58b69261c1b456642911772787e61d46, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: rosie_ple4se
+  speaker: Rosie

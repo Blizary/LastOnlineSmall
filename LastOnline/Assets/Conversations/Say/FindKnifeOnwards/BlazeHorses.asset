@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - Nowww hold ur horses
   - This could be a framing.
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: cfd91c83908f613448d0483262cdc865, type: 2}
-  speaker: blaz3_
+  speaker: Blaze

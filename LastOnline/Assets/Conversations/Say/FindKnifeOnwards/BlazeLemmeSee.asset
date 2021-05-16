@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - lemmie see.
   - this looks like an air coven weapon!
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 24e786c84c59d4940b4f12653fc9537d, type: 2}
-  speaker: blaz3_
+  speaker: Blaze

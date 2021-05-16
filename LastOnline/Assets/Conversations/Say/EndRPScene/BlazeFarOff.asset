@@ -17,7 +17,7 @@ MonoBehaviour:
   - so the murderer cant be far
   - we should ask the wine lady
   - if she saw anyone suspicious
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 78b1b645a266d224480632c7765b2c75, type: 2}
-  speaker: blaz3_
+  speaker: Blaze

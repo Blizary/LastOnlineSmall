@@ -15,8 +15,8 @@ MonoBehaviour:
   characterName: 'rosie_ple4se '
   chatText:
   - i bet sk8rgal would ;p
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: b54f27573a4aa384980f46c3b0a1131a, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: rosie_ple4se
+  speaker: Rosie

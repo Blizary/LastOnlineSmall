@@ -16,10 +16,10 @@ MonoBehaviour:
   chatText:
   - hey awesommmeesauce :D
   - wanna go to an open day with me?
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: ae7fd9fda898b2c40ab97c966da43999, type: 2}
   - {fileID: 11400000, guid: a0ba554a8fb9c234081d511161e860dd, type: 2}
   - {fileID: 11400000, guid: 7749f740572459c4bab784b927dfb595, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: rosie_ple4se
+  speaker: Rosie

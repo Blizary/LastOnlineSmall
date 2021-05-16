@@ -17,10 +17,10 @@ MonoBehaviour:
   - 'well. '
   - it was nice to see ya on here anyway
   - we should game out sometime :D
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: 14c614f853b4a10489dc4f018c3db455, type: 2}
   - {fileID: 11400000, guid: f1bfb264755e7304db1d4858cbe24ce7, type: 2}
   - {fileID: 11400000, guid: dc178b2318ddacd4299d277f3b789d78, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: rosie_ple4se
+  speaker: Rosie

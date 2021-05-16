@@ -17,7 +17,7 @@ MonoBehaviour:
   - yh with his blood on it
   - thankx dude.
   - sorry u died thooo xD
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 887c7ff37e2c2484d8757d0d0eda93c5, type: 2}
-  speaker: blaz3_
+  speaker: Blaze

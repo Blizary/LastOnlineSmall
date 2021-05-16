@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: blaz3_
   chatText:
   - You two know each other?
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 9630d39eca55d354c87ef3d9af263d6c, type: 2}
-  speaker: blaz3_
+  speaker: Blaze

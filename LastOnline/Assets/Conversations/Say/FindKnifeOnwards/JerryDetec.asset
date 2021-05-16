@@ -17,7 +17,7 @@ MonoBehaviour:
   - It is true
   - for I am the greatest detective
   - in the entirety of Zodikos!
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 0aac88f14bdd1f24dae46901a85f7929, type: 2}
-  speaker: _jerry
+  speaker: Jerry

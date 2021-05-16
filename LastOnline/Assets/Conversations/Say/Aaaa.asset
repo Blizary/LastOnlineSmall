@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - Aaaaah!
   - "Help, there\u2019s been a murder!!"
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: c8b07cb7817f52843a6d0452bea228ce, type: 2}
   speaker: Tulisa

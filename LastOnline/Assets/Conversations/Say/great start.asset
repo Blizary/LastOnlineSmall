@@ -15,8 +15,8 @@ MonoBehaviour:
   characterName: blaz3_
   chatText:
   - Well this is off to a great start
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: f1bb427bc7f09a44da3e71e10e404b4a, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: blaze
+  speaker: Blaze

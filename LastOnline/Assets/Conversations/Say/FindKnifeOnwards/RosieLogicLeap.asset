@@ -15,8 +15,8 @@ MonoBehaviour:
   characterName: rosie_ple4se
   chatText:
   - bit of a leap of logic
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: 44d3b914ad3379540be37a7c626206bb, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: rosie_ple4se
+  speaker: Rosie

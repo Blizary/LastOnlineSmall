@@ -17,8 +17,8 @@ MonoBehaviour:
   - "It\u2019s BECAUSE ur new"
   - u need to get your sea legs
   - Or detective legs I guess lol
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: d348bc929bad2b1419d22637da53a07e, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: blaz3_
+  speaker: Blaze

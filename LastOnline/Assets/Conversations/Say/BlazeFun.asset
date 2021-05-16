@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: blaz3_
   chatText:
   - ur a natural
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: dc59549e6b82a264a82b00a9092ba2e0, type: 2}
   speaker: Blaze

@@ -18,8 +18,8 @@ MonoBehaviour:
   - Looks like whoever did it
   - tried to get rid of the evidence!
   - Did a bad job of it tho.
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: fceaa1a725eb18f4aa89214e3064fe95, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: xX_SK8RGAL
+  speaker: Player

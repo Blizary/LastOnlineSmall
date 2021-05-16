@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: blaz3_
   chatText:
   - big knife.
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 2416b7613c9e7b44ea15bde27339a443, type: 2}
   speaker: Blaze

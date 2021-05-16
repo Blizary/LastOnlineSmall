@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: _deadbody1
   chatText:
   - with MY blood on irt.
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 7968e2ce47eac1e46bff57403217c303, type: 2}
-  speaker: _deadbody1
+  speaker: DeadBody

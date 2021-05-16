@@ -15,8 +15,8 @@ MonoBehaviour:
   characterName: Oskar_
   chatText:
   - why would someone do that?
-  timer: 0
+  timer: 5
   options:
   - {fileID: 11400000, guid: 7465ffac2bfbc514a9f1aacc068b1ef7, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: Oskar_
+  speaker: Oskar

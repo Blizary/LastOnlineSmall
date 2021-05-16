@@ -18,7 +18,7 @@ MonoBehaviour:
   - how am I supposed to react?
   - Dick.
   - ur supposed to stay in character
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 3bfea19893b9a0c459e74273006495a9, type: 2}
   speaker: Tulisa

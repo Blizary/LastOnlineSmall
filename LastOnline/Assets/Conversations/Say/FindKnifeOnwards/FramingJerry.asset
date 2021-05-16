@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: __jerry
   chatText:
   - it couuuld be a framing
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 682019f2295eb224f9cd376fe2dd8a3c, type: 2}
-  speaker: _jerry
+  speaker: Jerry

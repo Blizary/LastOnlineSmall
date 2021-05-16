@@ -16,8 +16,8 @@ MonoBehaviour:
   chatText:
   - welll someonee
   - left an air covern style knife
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: def1ceff22e41da419a737f0749cd23c, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: blaz3_
+  speaker: Blaze

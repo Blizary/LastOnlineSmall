@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: BlazeBritTV
+  m_EditorClassIdentifier: 
+  characterName: blaz3_
+  chatText:
+  - ok ok british tv is a touchy subject riteee? ;)
+  - lolzz.
+  - u been listening to any new tunes recently anywayzz?
+  timer: 5
+  options:
+  - {fileID: 11400000, guid: 5e6412c347b7f874ea7915de21c0de98, type: 2}
+  - {fileID: 11400000, guid: dde0cd145cc12c445b978771fd274d31, type: 2}
+  - {fileID: 11400000, guid: 2166b11d1cbe54c419d7b6df9a69e5c8, type: 2}
+  nextNpcText: {fileID: 0}
+  speaker: 

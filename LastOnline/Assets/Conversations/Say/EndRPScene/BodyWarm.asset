@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - the body is still warm
   - this was recent enough
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 8cfa6fe3948636c4b9778ffe8361da30, type: 2}
-  speaker: Tulisaa
+  speaker: Tulisa

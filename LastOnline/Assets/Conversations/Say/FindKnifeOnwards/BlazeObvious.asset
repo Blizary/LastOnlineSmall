@@ -16,8 +16,8 @@ MonoBehaviour:
   chatText:
   - yeah
   - especially something so obvious
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: ffd41b0a704abab4b897c9f532afa8c4, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: blaz3_
+  speaker: Blaze

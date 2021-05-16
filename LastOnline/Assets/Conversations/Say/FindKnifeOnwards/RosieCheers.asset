@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: rosie_ple4se
   chatText:
   - Cheers Jezza
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 4a280edcc4f4d69449fb173da747c9d5, type: 2}
-  speaker: rosie_ple4se
+  speaker: Rosie

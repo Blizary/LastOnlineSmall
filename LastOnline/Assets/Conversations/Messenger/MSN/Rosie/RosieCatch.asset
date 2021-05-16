@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ff5be52b53e4baee5744cee10a4c, type: 3}
+  m_Name: RosieCatch
+  m_EditorClassIdentifier: 
+  characterName: r0sie_1993
+  chatText:
+  - o just wanted to catch up :p
+  - 'random seeing u in game earlier! '
+  timer: 5
+  options:
+  - {fileID: 11400000, guid: cb8fac42c50ea514193ec1c139c22957, type: 2}
+  - {fileID: 11400000, guid: 759a73109a73a5648b57991a7416b3a8, type: 2}
+  nextNpcText: {fileID: 0}
+  speaker: 

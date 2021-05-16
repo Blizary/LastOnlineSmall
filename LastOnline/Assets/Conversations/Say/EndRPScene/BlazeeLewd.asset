@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - riteee
   - sounds a bit lewd tbh lol
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: d557b2caf3c67c0459bd0d2ac633e2a2, type: 2}
-  speaker: blaz3_
+  speaker: Blaze

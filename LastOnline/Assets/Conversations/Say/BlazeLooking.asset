@@ -17,7 +17,7 @@ MonoBehaviour:
   - okkkk sooo
   - what are we looking at here
   - did he die?
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 23edfcc5de52f3a448269b7436a46003, type: 2}
   speaker: Blaze

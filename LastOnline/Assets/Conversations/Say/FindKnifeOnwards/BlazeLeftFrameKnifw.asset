@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - or someone left the knife
   - to frame them
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 4688e04a33eeabf41a72a74c75974337, type: 2}
   speaker: Blaze

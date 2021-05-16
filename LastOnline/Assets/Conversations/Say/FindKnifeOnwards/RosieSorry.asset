@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: rosie_ple4se
   chatText:
   - oh yh sorry D;
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 0628d2817b9166a4f912ff6bfaac59ea, type: 2}
-  speaker: rosie_ple4se
+  speaker: Rosie

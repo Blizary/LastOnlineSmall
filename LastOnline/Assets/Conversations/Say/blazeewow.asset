@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: blaz3_
   chatText:
   - heh... yeahhhhhhhh
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: 9e553148ab7f05b4fb21033d293b1545, type: 2}
   - {fileID: 11400000, guid: 5dbb32ff885f0354f9fdbc42de28d656, type: 2}

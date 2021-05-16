@@ -17,7 +17,7 @@ MonoBehaviour:
   - yh so we found this knife
   - near the body
   - and it has an air coven style
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: add48fbd887404f448db560e69488ed7, type: 2}
-  speaker: Oskar_
+  speaker: Oskar

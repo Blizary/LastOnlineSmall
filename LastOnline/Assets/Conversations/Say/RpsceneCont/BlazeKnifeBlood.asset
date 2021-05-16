@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - just find the big knife
   - with blood on it
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: 0a5937900a5663c43a7be1e280fdb604, type: 2}
   nextNpcText: {fileID: 0}

@@ -17,7 +17,7 @@ MonoBehaviour:
   - i feel like inciting political dissent
   - between the covens is slightly beyond
   - "the scope of what we\u2019re doing here"
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: c154eedfde52f0146830450d76542a40, type: 2}
-  speaker: Tulisaa
+  speaker: Tulisa

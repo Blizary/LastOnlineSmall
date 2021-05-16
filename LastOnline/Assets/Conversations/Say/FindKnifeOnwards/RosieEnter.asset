@@ -15,8 +15,8 @@ MonoBehaviour:
   characterName: rosie_ple4se
   chatText:
   - hey srry im late
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: 53945127686ec0b4bb568f6502e65afd, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: rosie_ple4se
+  speaker: Rosie

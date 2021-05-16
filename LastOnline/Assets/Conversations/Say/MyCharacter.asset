@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: Oskar_
   chatText:
   - That is my character
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 7a2d5c8032a9b1043ac4ba756c89129c, type: 2}
   speaker: Oskar

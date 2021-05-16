@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - or maybe...
   - "they\u2019re trying to incite something"
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: ff70277ff94623c42826893f6b146ca5, type: 2}
-  speaker: blaz3_
+  speaker: Blaze

@@ -16,7 +16,7 @@ MonoBehaviour:
   chatText:
   - no worries
   - anyone wanna help out?
-  timer: 3
+  timer: 5
   options: []
   nextNpcText: {fileID: 11400000, guid: 9ee37da9f34ed4146b570773097f3218, type: 2}
-  speaker: rosie_ple4se
+  speaker: Rosie

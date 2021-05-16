@@ -16,8 +16,8 @@ MonoBehaviour:
   chatText:
   - lolll
   - just find the knife.
-  timer: 3
+  timer: 5
   options:
   - {fileID: 11400000, guid: 4298f97033a5db84485d94fe47b03048, type: 2}
   nextNpcText: {fileID: 0}
-  speaker: blaz3_
+  speaker: Blaze
