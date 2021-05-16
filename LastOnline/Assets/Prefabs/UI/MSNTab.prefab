@@ -267,7 +267,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 106.6, y: 25.379604}
+  m_SizeDelta: {x: 166.0014, y: 25.379604}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6802066138735844253
 CanvasRenderer:
@@ -375,8 +375,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd3eac1e84c6dce4488dfdc420b9ee85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: 21300000, guid: 7075f8586105e87459eb6b2d49ea109b, type: 3}
-  selectedSprite: {fileID: 21300000, guid: de65952532f268641913b7087b5dd4bd, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 27716a225f632b244b94a094d16c9526, type: 3}
+  selectedSprite: {fileID: 21300000, guid: 27716a225f632b244b94a094d16c9526, type: 3}
+  inMSN: 1
   tabnum: 0
   tabname: 
   blinkIconOBJ: {fileID: 4584785297727081327}
+  chatname: {fileID: 2808207835628085526}

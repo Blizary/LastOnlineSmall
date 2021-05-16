@@ -8,12 +8,15 @@ public class ChoiceController : MonoBehaviour
     public ChatOption currentOption;
     public bool hasOptions;
 
+    public bool inMSN;
     private ChatBoxManager chatManager;
+    private MsnManager msnManager;
 
     // Start is called before the first frame update
     void Start()
     {
         chatManager = GameObject.FindGameObjectWithTag("ChatManager").GetComponent<ChatBoxManager>();
+        msnManager = GameObject.FindGameObjectWithTag("MsnManager").GetComponent<MsnManager>();
     }
 
     // Update is called once per frame
@@ -31,7 +34,15 @@ public class ChoiceController : MonoBehaviour
 
     public void ChoiceChoosen()
     {
-        chatManager.ChoiceMade(currentOption, currentOption.npcAnwser,currentOption.playerAwnser);
+        if(inMSN)
+        {
+            msnManager.ChoiceMade(currentOption, currentOption.npcAnwser, currentOption.playerAwnser);
+        }
+        else
+        {
+            chatManager.ChoiceMade(currentOption, currentOption.npcAnwser, currentOption.playerAwnser);
+        }
+       
     }
 
    

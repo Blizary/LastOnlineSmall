@@ -76,17 +76,23 @@ public class DoorsBarManager : MonoBehaviour
 
     public void ChatBarButton()
     {
+        if (windowView.activeInHierarchy)
+        {
+            if (messengerView.activeInHierarchy)
+            {
+                messengerView.SetActive(false);
+            }
+            else
+            {
+                messengerView.SetActive(true);
+            }
+        }
+
         windowView.SetActive(true);
         gameView.SetActive(false);
 
-        if (messengerView.activeInHierarchy)
-        {
-            messengerView.SetActive(false);
-        }
-        else
-        {
-            messengerView.SetActive(true);
-        }
+       
+       
 
     }
 

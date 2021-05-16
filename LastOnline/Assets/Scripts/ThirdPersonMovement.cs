@@ -100,10 +100,6 @@ public class ThirdPersonMovement : MonoBehaviour
                             currentAwnser = currentAwnser.Remove(0, 1);
                         }
 
-                        if(msnManager.gameObject.activeInHierarchy)
-                        {
-
-                        }
                         
                     }
 

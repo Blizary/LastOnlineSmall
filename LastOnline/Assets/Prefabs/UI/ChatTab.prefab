@@ -152,6 +152,7 @@ MonoBehaviour:
   tabnum: 0
   tabname: 
   blinkIconOBJ: {fileID: 6187770059106139183}
+  chatname: {fileID: 5514604828186236502}
 --- !u!1 &5514604828186236502
 GameObject:
   m_ObjectHideFlags: 0

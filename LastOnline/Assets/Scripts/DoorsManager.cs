@@ -21,6 +21,7 @@ public class DoorsManager : MonoBehaviour
     public MsnManager msnManager;
     public ChatConv rpConvo;
     public ChatConv friendMSNConvo;
+    public ChatConv girlMSNConvo;
 
     public UnityEvent rpStart;
     public UnityEvent rpInterract;
@@ -63,6 +64,7 @@ public class DoorsManager : MonoBehaviour
                 break;
             case IngameEvent.RosieOff:
                 Debug.Log("Rosie logs off");
+                StartCoroutine(WaitForLogOff(5, girlMSNConvo));
                 rosieLogsOff.Invoke();
                 break;
             case IngameEvent.FriendLogOff:
@@ -82,5 +84,6 @@ public class DoorsManager : MonoBehaviour
     {
         yield return new WaitForSeconds(_time);
         msnManager.AddChat(_newConvo);
+        
     }
 }

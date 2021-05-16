@@ -23,11 +23,11 @@ public class MsnManager : MonoBehaviour
     public List<Tab> tabs;
 
 
-    private int currentChat;
+    public int currentChat;
     private bool scrolling;
     private int currentChatIndx;
     private DesktopManager manager;
-    private ThirdPersonMovement playerController;
+    public PlayerDesktopController playerController;
 
 
     private float innerTimer;
@@ -40,7 +40,7 @@ public class MsnManager : MonoBehaviour
 
         currentChat = 0;
         manager = GameObject.FindGameObjectWithTag("DesktopManager").GetComponent<DesktopManager>();
-        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<ThirdPersonMovement>();
+       
         scrolling = false;
         messageFinnish = false;
         ReadChatLists();
@@ -216,6 +216,7 @@ public class MsnManager : MonoBehaviour
 
     public void AddChat(ChatConv _newCov)
     {
+        Debug.Log("got into add chat");
         Tab newTab = new Tab();
         //get the name
         if (_newCov.chatType == ChatType.chatPublic)
@@ -230,6 +231,7 @@ public class MsnManager : MonoBehaviour
             newTab.tabName = _newCov.conversation[0].characterName;
         }
 
+        Debug.Log(newTab.tabName);
         //get the conversation
         newTab.tabChat = _newCov.conversation;
 
@@ -243,8 +245,11 @@ public class MsnManager : MonoBehaviour
         newTab.tabNum = tabs.Count;
 
         tabs.Add(newTab);
+        Debug.Log(newTab.tabNum.ToString());
+        Debug.Log(tabs[newTab.tabNum].tabChat[0].timer.ToString());
 
-        StartCoroutine(WaitForNextSentence(tabs[newTab.tabNum - 1].tabChat[0].timer, newTab, 0, null));
+
+        StartCoroutine(WaitForNextSentence(tabs[newTab.tabNum].tabChat[0].timer, newTab, 0, null));
 
     }
 
@@ -267,7 +272,7 @@ public class MsnManager : MonoBehaviour
             if (_message == 0)
             {
                 GameObject newtabDisplay = Instantiate(tabsPrefab, tabsContainer.transform);//create a new tab  
-                newtabDisplay.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = _currentTab.tabName;
+                newtabDisplay.GetComponent<TabController>().chatname.GetComponent<TextMeshProUGUI>().text = _currentTab.tabName;
                 newtabDisplay.GetComponent<TabController>().tabnum = _currentTab.tabNum;
                 _currentTab.tabObj = newtabDisplay;
             }
