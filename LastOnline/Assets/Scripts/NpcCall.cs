@@ -22,4 +22,22 @@ public class NpcCall : MonoBehaviour
         transform.GetChild(0).GetComponent<NPCController>().RPMove();
 
     }
+
+    public void RosieCome()
+    {
+        transform.GetChild(0).GetComponent<NPCController>().RosieEnter();
+
+    }
+
+    public void LogOff()
+    {
+        StartCoroutine(WaitLogOff());
+    }
+    
+    IEnumerator WaitLogOff()
+    {
+        yield return new WaitForSeconds(2);
+        gameObject.SetActive(false);
+    }
+
 }

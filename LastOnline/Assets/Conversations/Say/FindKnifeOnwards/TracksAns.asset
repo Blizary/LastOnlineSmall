@@ -17,5 +17,5 @@ MonoBehaviour:
   - could be trying
   - to cover up their tracks?
   npcAnwser: {fileID: 11400000, guid: 673f031fd01dd28469db65e6e194a1ab, type: 2}
-  triggersEvents: 0
-  nextEvent: 0
+  triggersEvents: 1
+  nextEvent: 3

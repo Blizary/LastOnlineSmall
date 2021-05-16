@@ -8,6 +8,9 @@ public enum IngameEvent
     RpEvent,
     RpInterract,
     FriendLogOff,
+    RosieEnter,
+    BlazeOff,
+    RosieOff,
 }
 public class DoorsManager : MonoBehaviour
 {
@@ -15,10 +18,16 @@ public class DoorsManager : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private bool holdToType;
     public ChatBoxManager chatManager;
+    public MsnManager msnManager;
     public ChatConv rpConvo;
+    public ChatConv friendMSNConvo;
+    public ChatConv girlMSNConvo;
 
     public UnityEvent rpStart;
     public UnityEvent rpInterract;
+    public UnityEvent rosieEnter;
+    public UnityEvent blazeLogsOff;
+    public UnityEvent rosieLogsOff;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +53,20 @@ public class DoorsManager : MonoBehaviour
                 Debug.Log("Rp interact started");
                 rpInterract.Invoke();
                 break;
+            case IngameEvent.RosieEnter:
+                Debug.Log("Rosie enters the scene");
+                rosieEnter.Invoke();
+                break;
+            case IngameEvent.BlazeOff:
+                Debug.Log("Blaze logs off");
+                StartCoroutine(WaitForLogOff(5, friendMSNConvo));
+                blazeLogsOff.Invoke();
+                break;
+            case IngameEvent.RosieOff:
+                Debug.Log("Rosie logs off");
+                StartCoroutine(WaitForLogOff(5, girlMSNConvo));
+                rosieLogsOff.Invoke();
+                break;
             case IngameEvent.FriendLogOff:
                 Debug.Log("Friend log off event started");
                 break;
@@ -54,5 +77,13 @@ public class DoorsManager : MonoBehaviour
     public bool HoldToType()
     {
         return holdToType;
+    }
+
+
+    IEnumerator WaitForLogOff(float _time,ChatConv _newConvo)
+    {
+        yield return new WaitForSeconds(_time);
+        msnManager.AddChat(_newConvo);
+        
     }
 }

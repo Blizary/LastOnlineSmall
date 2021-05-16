@@ -18,5 +18,5 @@ MonoBehaviour:
   - alrite
   - skls fuckin shit tho tbh
   npcAnwser: {fileID: 11400000, guid: e05bb22b3e64a824598172b84ffe2d8d, type: 2}
-  triggersEvents: 0
+  triggersEvents: 1
   nextEvent: 0

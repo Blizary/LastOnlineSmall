@@ -11,9 +11,12 @@ public class NPCController : MonoBehaviour
     private List<GameObject> movement = new List<GameObject>();
     private float speed = 5;
 
+    public GameObject model;
     public List<GameObject> rpMovement;
+    public List<GameObject> rosieEnter;
 
     private GameObject parent;
+
    
 
     // Start is called before the first frame update
@@ -32,12 +35,17 @@ public class NPCController : MonoBehaviour
             {
                 Vector3 dir = movement[0].transform.position;
                 dir.y = transform.position.y;
-                transform.LookAt(dir);
+                parent.transform.LookAt(dir);
                 movement.RemoveAt(0);
 
             }
             else
             {
+                if (model)
+                {
+                    model.GetComponent<Animator>().SetBool("Walking", true);
+                }
+                
                 float step = speed * Time.deltaTime; // calculate distance to move
                 Vector3 dir = movement[0].transform.position;
                 dir.y = transform.position.y;
@@ -52,6 +60,14 @@ public class NPCController : MonoBehaviour
                 }
             }
           
+        }
+        else
+        {
+            if(model)
+            {
+                model.GetComponent<Animator>().SetBool("Walking", false);
+            }
+            
         }
     }
 
@@ -68,8 +84,12 @@ public class NPCController : MonoBehaviour
 
     public void SetChatBubble(string _newText)
     {
-        chatBubble.GetComponent<ChatBubbleController>().SetChat(_newText);
-        chatBubble.GetComponent<ChatBubbleController>().StartTimer();
+        if(chatBubble.GetComponent<ChatBubbleController>())
+        {
+            chatBubble.GetComponent<ChatBubbleController>().SetChat(_newText);
+            chatBubble.GetComponent<ChatBubbleController>().StartTimer();
+        }
+        
     }
 
     public void RPMove()
@@ -77,6 +97,14 @@ public class NPCController : MonoBehaviour
         for(int i =0;i<rpMovement.Count;i++)
         {
             movement.Add(rpMovement[i]);
+        }
+    }
+
+    public void RosieEnter()
+    {
+        for (int i = 0; i < rosieEnter.Count; i++)
+        {
+            movement.Add(rosieEnter[i]);
         }
     }
 }

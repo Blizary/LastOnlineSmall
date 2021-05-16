@@ -17,5 +17,5 @@ MonoBehaviour:
   - lets doooo it!!!!!!!
   - adventure time with rosie n sk8rgalll!!!
   npcAnwser: {fileID: 11400000, guid: a4319a9f8b3fb414cb494754ab5f4314, type: 2}
-  triggersEvents: 0
-  nextEvent: 0
+  triggersEvents: 1
+  nextEvent: 5

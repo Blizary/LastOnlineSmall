@@ -23,4 +23,12 @@ public class InteractablesManager : MonoBehaviour
             inte.SetActive(true);
         }
     }
+
+    public void DeactiveInteractablez()
+    {
+        foreach (GameObject inte in interactables)
+        {
+            inte.SetActive(false);
+        }
+    }
 }
