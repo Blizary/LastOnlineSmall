@@ -18,7 +18,9 @@ public class DoorsManager : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private bool holdToType;
     public ChatBoxManager chatManager;
+    public MsnManager msnManager;
     public ChatConv rpConvo;
+    public ChatConv friendMSNConvo;
 
     public UnityEvent rpStart;
     public UnityEvent rpInterract;
@@ -56,6 +58,7 @@ public class DoorsManager : MonoBehaviour
                 break;
             case IngameEvent.BlazeOff:
                 Debug.Log("Blaze logs off");
+                StartCoroutine(WaitForLogOff(5, friendMSNConvo));
                 blazeLogsOff.Invoke();
                 break;
             case IngameEvent.RosieOff:
@@ -72,5 +75,12 @@ public class DoorsManager : MonoBehaviour
     public bool HoldToType()
     {
         return holdToType;
+    }
+
+
+    IEnumerator WaitForLogOff(float _time,ChatConv _newConvo)
+    {
+        yield return new WaitForSeconds(_time);
+        msnManager.AddChat(_newConvo);
     }
 }

@@ -6,6 +6,7 @@ public class ThirdPersonMovement : MonoBehaviour
 {
     CharacterController controller;
     FarPersonManager manager;
+    DesktopManager msnManager;
     public Transform cam;
     public float speed;
     public float rotSpeed;
@@ -27,6 +28,7 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<FarPersonManager>();
+        msnManager = GameObject.FindGameObjectWithTag("DesktopManager").GetComponent<DesktopManager>();
         chatManager = GameObject.FindGameObjectWithTag("ChatManager").GetComponent<ChatBoxManager>();
         doorsManager = GameObject.FindGameObjectWithTag("DoorsManager").GetComponent<DoorsManager>();
     }
@@ -86,14 +88,23 @@ public class ThirdPersonMovement : MonoBehaviour
                 {
                     if (!Input.GetMouseButtonDown(0) && !Input.GetMouseButtonDown(1) && Input.anyKey)
                     {
-                        if (manager.CheckAwnserSize())
+                        if(manager.gameObject.activeInHierarchy)//in the mmo
                         {
-                            //chat is full
-                            manager.AwnserClearOne();
+                            if (manager.CheckAwnserSize())
+                            {
+                                //chat is full
+                                manager.AwnserClearOne();
+                            }
+
+                            manager.AddAwnser(currentAwnser[0]);
+                            currentAwnser = currentAwnser.Remove(0, 1);
                         }
 
-                        manager.AddAwnser(currentAwnser[0]);
-                        currentAwnser = currentAwnser.Remove(0, 1);
+                        if(msnManager.gameObject.activeInHierarchy)
+                        {
+
+                        }
+                        
                     }
 
                 }

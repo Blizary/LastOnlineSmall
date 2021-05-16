@@ -8,6 +8,7 @@ TagManager:
   - ChatManager
   - DoorsManager
   - Manager
+  - MsnManager
   layers:
   - Default
   - TransparentFX
