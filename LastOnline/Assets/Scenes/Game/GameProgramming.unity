@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 5332.953, g: 3343.4238, b: 2400.5, a: 1}
+  m_IndirectSpecularColor: {r: 5335.5547, g: 3343.6465, b: 2397.246, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2754,7 +2754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78957ac33a652294d861f3d8093dba55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: 
+  playerName: xX_SK8RGAL
   awnserMaxSize: 1000
   chatbox: []
   optionsPanel: {fileID: 1230590438}
@@ -9079,6 +9079,7 @@ MonoBehaviour:
   UITrash: {fileID: 270333946}
   optionsPanel: {fileID: 1230590438}
   msnImg: {fileID: 2129378441}
+  barManager: {fileID: 0}
   maxNumOfMessages: 7
   inactivityChatTimer: 10
   tabs: []
@@ -19665,6 +19666,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5691554848953241475, guid: 20b59ed38db06ce438c3bc1d78319160, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691554848953241475, guid: 20b59ed38db06ce438c3bc1d78319160, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691554848953241475, guid: 20b59ed38db06ce438c3bc1d78319160, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5691554849023218366, guid: 20b59ed38db06ce438c3bc1d78319160, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -2.11
@@ -23013,8 +23026,8 @@ MonoBehaviour:
   chatManager: {fileID: 278497934}
   msnManager: {fileID: 252890169}
   rpConvo: {fileID: 11400000, guid: e0c86589f49743940b0d58a17eb92ce1, type: 2}
-  friendMSNConvo: {fileID: 11400000, guid: 1dd0b58c6df19354f989e251cf730c9c, type: 2}
-  girlMSNConvo: {fileID: 0}
+  friendMSNConvo: {fileID: 11400000, guid: f7365c9122655d24fa320cbfa00161f9, type: 2}
+  girlMSNConvo: {fileID: 11400000, guid: 6e31c430c8d1dbf448d50427ce4c99ed, type: 2}
   rpStart:
     m_PersistentCalls:
       m_Calls:
@@ -30173,7 +30186,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530376034}
-  m_LocalRotation: {x: -0.0017754537, y: 0.9221658, z: -0.3867676, w: -0.0042331945}
+  m_LocalRotation: {x: -0.0017754369, y: 0.9221658, z: -0.3867676, w: -0.0042331545}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -42863,7 +42876,7 @@ GameObject:
   - component: {fileID: 726994336}
   m_Layer: 0
   m_Name: DoorsBar
-  m_TagString: Untagged
+  m_TagString: DoorsBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42908,6 +42921,7 @@ MonoBehaviour:
   musicFolderView: {fileID: 625870191}
   photoFolderView: {fileID: 474249851}
   photoShow: {fileID: 1048548060}
+  messengerBlink: {fileID: 1848214238}
   tavernMusic: {fileID: 726994336}
 --- !u!82 &726994336
 AudioSource:
@@ -74532,6 +74546,101 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7796556090246877761, guid: b2394692c86b0da45a68ffaf9158a38b, type: 3}
   m_PrefabInstance: {fileID: 829835642}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1848214238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1848214239}
+  - component: {fileID: 1848214242}
+  - component: {fileID: 1848214241}
+  - component: {fileID: 1848214240}
+  m_Layer: 0
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1848214239
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848214238}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1960965242}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1848214240
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848214238}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9db226df082a43a4cb85c25c6b531ba7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1848214241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848214238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.86413246, b: 0.4669811, a: 0.6039216}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 8bb60a677ca56fa48888dbfa06171498, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1848214242
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848214238}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1851064152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76863,7 +76972,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1848214239}
   m_Father: {fileID: 2108238682}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -81030,6 +81140,18 @@ PrefabInstance:
     - target: {fileID: 5691554847530699687, guid: 20b59ed38db06ce438c3bc1d78319160, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691554848953241475, guid: 20b59ed38db06ce438c3bc1d78319160, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691554848953241475, guid: 20b59ed38db06ce438c3bc1d78319160, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691554848953241475, guid: 20b59ed38db06ce438c3bc1d78319160, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5691554849023218367, guid: 20b59ed38db06ce438c3bc1d78319160, type: 3}
       propertyPath: m_Sprite

@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class DoorsBarManager : MonoBehaviour
 {
-    [SerializeField] private GameObject gameView;
-    [SerializeField] private GameObject windowView;
-    [SerializeField] private GameObject messengerView;
+    [SerializeField] public GameObject gameView;
+    [SerializeField] public GameObject windowView;
+    [SerializeField] public GameObject messengerView;
     [SerializeField] private GameObject musicFolderView;
     [SerializeField] private GameObject photoFolderView;
     [SerializeField] private GameObject photoShow;
 
+    [SerializeField] private GameObject messengerBlink;
 
     public AudioSource tavernMusic;
 
@@ -93,12 +94,17 @@ public class DoorsBarManager : MonoBehaviour
                 messengerView.SetActive(true);
             }
         }
+        else
+        {
+            messengerView.SetActive(true);
+        }
 
         windowView.SetActive(true);
         gameView.SetActive(false);
+        StopBlinkMsn();
 
-       
-       
+
+
 
     }
 
@@ -126,5 +132,16 @@ public class DoorsBarManager : MonoBehaviour
     public void ClosePhotoShow()
     {
         photoShow.SetActive(false);
+    }
+
+
+    public void BlinkMsn()
+    {
+        messengerBlink.SetActive(true);
+    }
+
+    public void StopBlinkMsn()
+    {
+        messengerBlink.SetActive(false);
     }
 }

@@ -9,13 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73afa3e0513ea954ca26c76194ae049a, type: 3}
-  m_Name: Hey
+  m_Script: {fileID: 11500000, guid: 22244fcb5c324ad41ac21e0da59eec6b, type: 3}
+  m_Name: BlazeMSn
   m_EditorClassIdentifier: 
-  feelingName: hey!
-  playerAwnser:
-  - hey dude! u gd?
-  - long time no see!
-  npcAnwser: {fileID: 11400000, guid: b9248769d30eb384c927113d308d2d38, type: 2}
-  triggersEvents: 1
-  nextEvent: 4
+  chatType: 0
+  conversation: []
+  msnIcon: {fileID: 0}

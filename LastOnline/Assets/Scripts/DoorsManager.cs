@@ -84,6 +84,7 @@ public class DoorsManager : MonoBehaviour
     {
         yield return new WaitForSeconds(_time);
         msnManager.AddChat(_newConvo);
-        
+        msnManager.AddChat(girlMSNConvo);
+
     }
 }

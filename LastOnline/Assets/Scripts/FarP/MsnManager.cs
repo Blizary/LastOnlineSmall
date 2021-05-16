@@ -15,6 +15,7 @@ public class MsnManager : MonoBehaviour
     public GameObject UITrash;
     public GameObject optionsPanel;
     public GameObject msnImg;
+    public DoorsBarManager barManager;
 
 
 
@@ -42,7 +43,8 @@ public class MsnManager : MonoBehaviour
 
         currentChat = 0;
         manager = GameObject.FindGameObjectWithTag("DesktopManager").GetComponent<DesktopManager>();
-       
+        barManager = GameObject.FindGameObjectWithTag("DoorsBar").GetComponent<DoorsBarManager>();
+
         scrolling = false;
         messageFinnish = false;
         ReadChatLists();
@@ -219,6 +221,11 @@ public class MsnManager : MonoBehaviour
 
     public void AddChat(ChatConv _newCov)
     {
+        if (!barManager.messengerView.activeInHierarchy)
+        {
+            barManager.BlinkMsn();
+        }
+
         Debug.Log("got into add chat");
         Tab newTab = new Tab();
         //get the name

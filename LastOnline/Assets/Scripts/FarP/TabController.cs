@@ -15,11 +15,13 @@ public class TabController : MonoBehaviour
     public string tabname;
     public GameObject blinkIconOBJ;
     public GameObject chatname;
+    public DoorsBarManager barManager;
     // Start is called before the first frame update
     void Start()
     {
         chatManager = GameObject.FindGameObjectWithTag("ChatManager").GetComponent<ChatBoxManager>();
         msnManager = GameObject.FindGameObjectWithTag("MsnManager").GetComponent<MsnManager>();
+        barManager = GameObject.FindGameObjectWithTag("DoorsBar").GetComponent<DoorsBarManager>();
     }
 
     // Update is called once per frame
@@ -51,6 +53,14 @@ public class TabController : MonoBehaviour
     public void SomethingNew()
     {
         blinkIconOBJ.SetActive(true);//turn on blink
+        if(inMSN)
+        {
+            if(!barManager.messengerView.activeInHierarchy)
+            {
+                barManager.BlinkMsn();
+            }
+            
+        }
     }
 
     public void Selected()

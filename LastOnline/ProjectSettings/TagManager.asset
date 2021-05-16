@@ -10,6 +10,7 @@ TagManager:
   - Manager
   - MsnManager
   - DesktopPlayer
+  - DoorsBar
   layers:
   - Default
   - TransparentFX

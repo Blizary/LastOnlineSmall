@@ -40,6 +40,7 @@ public class ThirdPersonMovement : MonoBehaviour
     void Update()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
+       // model.transform.position = new Vector3(0, -1.19843f, 0);
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 dir = new Vector3(horizontal, 0f, vertical).normalized;
         if(Input.GetMouseButton(1) && Input.GetMouseButton(0))
